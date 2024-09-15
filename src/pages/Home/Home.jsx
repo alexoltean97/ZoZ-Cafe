@@ -1,11 +1,15 @@
 import { h } from 'preact';
-
+import Intro from '../../components/Intro/Intro';
+import Categories from '../../components/Categories/Categories';
+import Products from '../../components/Products/Products';
 const Home = () => {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <p>Welcome to the Home Page</p>
-    </div>
+    <>
+
+    <Intro />
+    <Categories />
+    <Products />
+    </>
   );
 };
 
