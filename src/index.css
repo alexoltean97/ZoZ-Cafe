@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('./assets/fonts/Rhizome-RegularTrial.otf') format('otf'),
+       url('./assets/fonts/Rhizome-RegularTrial.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyCustomFont2';
+  src: url('./assets/fonts/gillsansnova_book.ttf') format('ttf'),
+       url('./assets/fonts/gillsansnova_book..ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  font-family: 'MyCustomFont2', sans-serif;
+}

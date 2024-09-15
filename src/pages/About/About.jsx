@@ -1,10 +1,8 @@
-import { h } from 'preact';
-
 const About = () => {
   return (
     <div>
-      <h1>About Page</h1>
-      <p>Welcome to the About Page</p>
+      <span>Despre noi</span>
+      <h4></h4>
     </div>
   );
 };
