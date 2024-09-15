@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "image": "images/espresso.jpg",
+      "title": "Espresso",
+      "description": "A strong and bold shot of espresso made from finely ground coffee beans.",
+      "price": 2.50,
+      "category": "Espresso"
+    },
+    {
+      "id": 2,
+      "image": "images/latte.jpg",
+      "title": "Latte",
+      "description": "Smooth and creamy latte with a perfect balance of espresso and steamed milk.",
+      "price": 3.75,
+      "category": "Latte"
+    },
+    {
+      "id": 3,
+      "image": "images/cappuccino.jpg",
+      "title": "Cappuccino",
+      "description": "A classic cappuccino with a rich layer of foam and a robust espresso flavor.",
+      "price": 3.50,
+      "category": "Cappuccino"
+    },
+    {
+      "id": 4,
+      "image": "images/americano.jpg",
+      "title": "Americano",
+      "description": "A strong and diluted espresso shot, giving a rich coffee flavor without the intensity.",
+      "price": 2.75,
+      "category": "Americano"
+    },
+    {
+      "id": 5,
+      "image": "images/mocha.jpg",
+      "title": "Mocha",
+      "description": "A delightful mix of espresso, chocolate, and steamed milk topped with whipped cream.",
+      "price": 4.00,
+      "category": "Mocha"
+    },
+    {
+      "id": 6,
+      "image": "images/flatwhite.jpg",
+      "title": "Flat White",
+      "description": "A silky flat white with a strong espresso shot and velvety microfoam.",
+      "price": 3.85,
+      "category": "Flat White"
+    },
+    {
+      "id": 7,
+      "image": "images/icedcoffee.jpg",
+      "title": "Iced Coffee",
+      "description": "A refreshing iced coffee brewed to perfection and served over ice.",
+      "price": 3.00,
+      "category": "Iced Coffee"
+    },
+    {
+      "id": 8,
+      "image": "images/coldbrew.jpg",
+      "title": "Cold Brew",
+      "description": "Smooth and less acidic cold brew coffee, steeped for 12 hours for a rich flavor.",
+      "price": 3.25,
+      "category": "Cold Brew"
+    },
+    {
+      "id": 9,
+      "image": "images/caramelmacchiato.jpg",
+      "title": "Caramel Macchiato",
+      "description": "A delicious caramel macchiato with layers of espresso, milk, and caramel syrup.",
+      "price": 4.25,
+      "category": "Caramel Macchiato"
+    },
+    {
+      "id": 10,
+      "image": "images/affogato.jpg",
+      "title": "Affogato",
+      "description": "A decadent dessert with a scoop of vanilla ice cream topped with a shot of hot espresso.",
+      "price": 4.50,
+      "category": "Dessert"
+    }
+  ]
+  
