@@ -2,7 +2,7 @@ import { Router } from "preact-router";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import "./app.css";
 
@@ -22,3 +22,4 @@ const App = () => {
   );
 };
 export default App;
+// npm install i18next react-i18next
