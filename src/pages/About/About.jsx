@@ -1,6 +1,7 @@
 const About = () => {
   return (
     <div className="main-about">
+      <div className="container">
       <h2>Despre noi</h2>
       <div className="row">
         <div className="col-lg-9">
@@ -32,6 +33,7 @@ const About = () => {
             <img src="https://placehold.co/400"></img>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

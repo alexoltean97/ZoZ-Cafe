@@ -1,10 +1,10 @@
-import { h } from "preact";
 import unsplash1 from "../../assets/unsplash/unsplash1.jpg";
 import unsplash2 from "../../assets/unsplash/unsplash2.jpg";
 import unsplash5 from "../../assets/unsplash/unsplash5.jpg";
 const Contact = () => {
   return (
-    <div>
+    <div className="visit-us">
+      <div className="container">
       <h2>Treci pe la noi!</h2>
       <p>Treceti si vizitati pe la cele mai smechere locatii din Arad</p>
 
@@ -29,6 +29,7 @@ const Contact = () => {
           <img style="max-width:400px" src={unsplash1} alt="unsplash4" />
           <img style="max-width:400px" src={unsplash2} alt="unsplash4" />
         </div>
+      </div>
       </div>
     </div>
   );
