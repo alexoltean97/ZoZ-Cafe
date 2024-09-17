@@ -1,14 +1,23 @@
-import { useState } from 'preact/hooks';
 import Navigation from "../Navigation/Navigation";
 import Language from "../Language/Language";
-const Navbar = () => {
+import MobileNavigation from "../MobileNavigation/MobileNavigation";
 
+const Header = () => {
   return (
-    <header className="main-header sticky-top bg-white d-flex justify-content-between">
-      <Navigation />
-      <Language />
+    <header className="main-header sticky-top bg-white">
+     
+      <div className="container d-flex justify-content-between d-none d-md-flex">
+        <Navigation />
+        <Language />
+      </div>
+
+ 
+      <div className="container justify-content-between d-md-none">
+        <MobileNavigation />
+       
+      </div>
     </header>
   );
 };
 
-export default Navbar;
+export default Header;

@@ -48,6 +48,10 @@ body {
    font-family: 'MainFont', sans-serif; 
 }
 
+.main-header{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .main-nav_link {
   font-weight: 400;
   font-size: 18px;
@@ -58,7 +62,6 @@ body {
 }
 
 .active-link {
-  font-weight: bold;
   position: relative;
 }
 
@@ -94,11 +97,21 @@ body {
   object-fit: cover;
   object-position: 50% 50%;
   width: 20px;
-  height: 20px;
+  height: 20px; 
   border-radius: 100%;
 }
 
 .dropdown-menu span{
   margin-left: 15px;
   font-size: 18px;
+}
+
+.dropdown-item:active{
+  color: var(--main-color);
+  background-color: var(--bs-dropdown-link-hover-bg);
+}
+
+.icon-menu{
+  right: 5px;
+  bottom: 2px;
 }

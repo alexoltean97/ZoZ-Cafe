@@ -1,6 +1,7 @@
 const Categories = () => {
   return (
     <div className="categories">
+      <div className="container">
       <span>Categorii</span>
       <div className="categories-row d-flex">
         <div className="category-box">
@@ -299,6 +300,7 @@ const Categories = () => {
             <span>Specialty Coffe</span>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

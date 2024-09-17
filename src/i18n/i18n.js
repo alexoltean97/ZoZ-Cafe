@@ -12,9 +12,11 @@ i18n.use(initReactI18next).init({
         main_intro: "Alege metoda de livrare și hai să descoperim toate produsele care sunt doar la un click distanță.",
         categories: "Categorii",
         product: "Toate produsele",
-        privacy_policy: "Privacy Policy",
-        terms_condition: "Terms and Conditions",
-        cookie_settings: "Cookie Settings"
+        privacy_policy: "Politica de confidențialitate",
+        terms_condition: "Termeni și condiții",
+        cookie_settings: "Setări cookie",
+        romanian: "Romana",
+        english: "Engleza"
       }
     },
 
@@ -27,9 +29,11 @@ i18n.use(initReactI18next).init({
         main_intro: "Choose the delivery method and let's discover all the products that are just a click away.",
         categories: "Categories",
         product: "All products",
-        privacy_policy: "Politica de confidențialitate",
-        terms_condition: "Termeni și condiții",
-        cookie_settings: "Setări cookie"
+        privacy_policy: "Privacy Policy",
+        terms_condition: "Terms and Conditions",
+        cookie_settings: "Cookie Settings",
+        romanian: "Romanian",
+        english: "English"
       }
     }
   },

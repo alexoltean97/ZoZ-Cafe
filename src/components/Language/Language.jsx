@@ -1,9 +1,10 @@
 import { useState } from "preact/hooks";
 import ro from "../../assets/images/ro.png";
 import en from "../../assets/images/gb.png";
-//import { useTranslation } from "preact-i18next";
+import { useTranslation } from "preact-i18next";
 import i18n from "../../i18n/i18n";
 const Language = () => {
+  const { t } = useTranslation();
   const [subMenu, setActive] = useState(false);
   const [lngImage, setLngImage] = useState(ro);
 
@@ -14,11 +15,10 @@ const Language = () => {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
 
-    if(lng === "ro"){
+    if (lng === "ro") {
       setLngImage(ro);
-    } else if (lng === "en"){
-      setLngImage(en); 
-
+    } else if (lng === "en") {
+      setLngImage(en);
     }
     setActive(false);
   };
@@ -37,7 +37,7 @@ const Language = () => {
               href="#"
             >
               <img src={ro} alt="romanian" />
-              <span className="ml-2">Romana</span>
+              <span className="ml-2">{t("romanian")}</span>
             </a>
           </li>
           <li>
@@ -47,7 +47,7 @@ const Language = () => {
               href="#"
             >
               <img src={en} alt="english" />
-              <span>Engleza</span>
+              <span>{t("english")}</span>
             </a>
           </li>
         </ul>
