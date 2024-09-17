@@ -1,14 +1,27 @@
 import { useState } from "preact/hooks";
 import { Link } from "preact-router/match";
 import { useTranslation } from "preact-i18next";
+import ro from "../../assets/images/ro.png";
+import en from "../../assets/images/gb.png";
+import i18n from "../../i18n/i18n";
 
 const MobileNavigation = () => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
   const [isOpen, setIsOpen] = useState(false);
+  const [isSelected, setIsSelected] = useState(true);
 
   const openMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const setActiveLanguage = () => {
+    setIsSelected(!isSelected);
+  };
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setActiveLanguage(false);
   };
 
   return (
@@ -55,18 +68,16 @@ const MobileNavigation = () => {
             <line x1="6" y1="6" x2="18" y2="18"></line>
           </svg>
         </div>
-
       </div>
 
-
-
-      <nav className="mobile-navigation">
-        <ul>
-          <li>
+      <nav className={`mobile-navigation ${!isOpen ? "d-block" : "d-none"}`}>
+        <ul className="p-0">
+          <li className="text-left list-none mb-2">
             <Link
               href="/"
               className="mx-4 pb-1 main-nav_link position-relative"
               activeClassName="active-link"
+              style="margin-left: 5px !important;"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -87,11 +98,12 @@ const MobileNavigation = () => {
             </Link>
           </li>
 
-          <li>
+          <li className="text-left list-none mb-2">
             <Link
               href="/about"
               className="mx-4 pb-1 main-nav_link position-relative"
               activeClassName="active-link"
+              style="margin-left: 5px !important;"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -113,11 +125,12 @@ const MobileNavigation = () => {
             </Link>
           </li>
 
-          <li>
+          <li className="text-left list-none mb-2">
             <Link
               href="/contact"
               className="mx-4 pb-1 main-nav_link position-relative"
               activeClassName="active-link"
+              style="margin-left: 5px !important;"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -136,9 +149,39 @@ const MobileNavigation = () => {
               {t("contact")}
             </Link>
           </li>
+
+          <div className="image-holder d-flex mt-3" style="gap:5px">
+            <a
+              className="dropdown-item"
+              onClick={() => changeLanguage("ro")}
+              href="#"
+              style="width: 7%;"
+            >
+              <img
+                className={`rounded-small-flag ${
+                  isSelected ? "active-lang" : ""
+                }`}
+                src={ro}
+                alt="romanian"
+              />
+            </a>
+
+            <a
+              className="dropdown-item"
+              onClick={() => changeLanguage("en")}
+              href="#"
+            >
+                <img
+                className={`rounded-small-flag ${
+                  isSelected ? "" : "active-lang"
+                }`}
+                src={en}
+                alt="english"
+              />
+            </a>
+          </div>
         </ul>
       </nav>
-
     </>
   );
 };

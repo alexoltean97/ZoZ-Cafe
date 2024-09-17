@@ -12,7 +12,7 @@ const Header = () => {
       </div>
 
  
-      <div className="container justify-content-between d-md-none">
+      <div className="container justify-content-between d-md-none pb-1">
         <MobileNavigation />
        
       </div>
