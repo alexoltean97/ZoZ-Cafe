@@ -132,3 +132,15 @@ body {
   box-shadow: 0 0 8px 2px rgba(58, 141, 255, 0.5);
   border: none; 
 }
+
+.intro-content {
+  bottom: 80px;
+  left: 40px;
+  color: #fff;
+}
+.banner{
+  background-color: #1c171d;
+}
+.banner img{
+  opacity: 0.4;
+}
