@@ -42,7 +42,7 @@ const MobileNavigation = () => {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className={`feather feather-menu ${!isOpen ? "d-block" : "d-none"}`}
+            className={`feather feather-menu ${!isOpen ? "d-none" : "d-block"}`}
             onClick={openMenu}
             style="cursor:pointer;"
           >
@@ -62,8 +62,8 @@ const MobileNavigation = () => {
             stroke-linecap="round"
             stroke-linejoin="round"
             onClick={openMenu}
-            class={`feather feather-x ${!isOpen ? "d-none" : "d-block"}`}
-          >
+            className={`feather feather-x ${isOpen ? "d-none" : "d-block"}`}
+            >
             <line x1="18" y1="6" x2="6" y2="18"></line>
             <line x1="6" y1="6" x2="18" y2="18"></line>
           </svg>
