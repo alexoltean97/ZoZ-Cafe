@@ -1,15 +1,15 @@
 @font-face {
-  font-family: 'MainFont';
-  src: url('./assets/fonts/Rhizome-RegularTrial.otf') format('otf'),
-       url('./assets/fonts/Rhizome-RegularTrial.otf') format('otf');
+  font-family: "MainFont";
+  src: url("./assets/fonts/Rhizome-RegularTrial.otf") format("otf"),
+    url("./assets/fonts/Rhizome-RegularTrial.otf") format("otf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'MyCustomFont2';
-  src: url('./assets/fonts/gillsansnova_book.ttf') format('ttf'),
-       url('./assets/fonts/gillsansnova_book..ttf') format('ttf');
+  font-family: "MyCustomFont2";
+  src: url("./assets/fonts/gillsansnova_book.ttf") format("ttf"),
+    url("./assets/fonts/gillsansnova_book..ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -32,15 +32,15 @@
   --main-color: #242424;
 }
 
-.bg-white{
+.bg-white {
   background-color: #fff;
 }
 
-.ml-2{
+.ml-2 {
   margin-left: 15px;
 }
 
-.list-none{
+.list-none {
   list-style-type: none;
 }
 
@@ -49,10 +49,10 @@ body {
   margin: 0 0 0 0;
   height: 100%;
   width: 100%;
-   font-family: 'MainFont', sans-serif; 
+  font-family: "MainFont", sans-serif;
 }
 
-.main-header{
+.main-header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -62,7 +62,7 @@ body {
   line-height: 27px;
   color: var(--main-color);
   text-decoration: none;
-  font-family: 'MainFont', sans-serif;
+  font-family: "MainFont", sans-serif;
 }
 
 .active-link {
@@ -74,13 +74,13 @@ body {
   content: "";
   display: block;
   position: absolute;
-  bottom: -0px; 
+  bottom: -0px;
   left: 0px;
-  height: 2px; 
+  height: 2px;
   width: 100%;
   background-color: rgb(0, 0, 0);
   transform-origin: left;
-  transform: scaleX(0); 
+  transform: scaleX(0);
   transition: transform 0.3s ease-out;
 }
 
@@ -89,38 +89,38 @@ body {
 }
 
 .main-nav_link:hover::after {
-  transform: scaleX(1); 
+  transform: scaleX(1);
 }
 
-.language-dropdown{
+.language-dropdown {
   border: none;
   background: none;
 }
 
-.language-dropdown img{
+.language-dropdown img {
   object-fit: cover;
   object-position: 50% 50%;
   width: 20px;
-  height: 20px; 
+  height: 20px;
   border-radius: 100%;
 }
 
-.dropdown-menu span{
+.dropdown-menu span {
   margin-left: 15px;
   font-size: 18px;
 }
 
-.dropdown-item:active{
+.dropdown-item:active {
   color: var(--main-color);
   background-color: var(--bs-dropdown-link-hover-bg);
 }
 
-.icon-menu{
+.icon-menu {
   right: 5px;
   bottom: 2px;
 }
 
-.rounded-small-flag{
+.rounded-small-flag {
   object-fit: cover;
   object-position: 50% 50%;
   width: 20px;
@@ -130,17 +130,108 @@ body {
 
 .active-lang {
   box-shadow: 0 0 8px 2px rgba(58, 141, 255, 0.5);
-  border: none; 
+  border: none;
+}
+
+.banner {
+  background-color: #1c171d;
+  width: 100%;
+  height: 436px;
+  margin-bottom: 40px;
+  overflow: hidden;
 }
 
 .intro-content {
-  bottom: 80px;
+  bottom: 120px;
   left: 40px;
   color: #fff;
 }
-.banner{
-  background-color: #1c171d;
+
+.intro-content h1 {
+  font-weight: bold;
 }
-.banner img{
+
+.intro-content p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.banner picture {
   opacity: 0.4;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-box {
+  cursor: pointer;
+}
+
+.category-image {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0px 10px 40px rgba(29, 22, 23, 0.07);
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.category-image:hover {
+  background-color: var(--main-color);
+}
+
+.active-category {
+  background-color: var(--main-color);
+}
+
+.active-category svg{
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(252deg)
+  brightness(108%) contrast(105%);
+}
+
+.category-image:hover svg {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(252deg)
+    brightness(108%) contrast(105%);
+}
+
+.category-label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.category-image svg {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/** Media queries **/
+
+@media screen and (min-width: 768px) {
+  .intro-content {
+    max-width: 560px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro-content h1 {
+    font-size: 24px;
+  }
+
+  .intro-content p {
+    font-size: 18px;
+  }
+
+  .intro-content {
+    max-width: 350px;
+  }
 }

@@ -1,14 +1,15 @@
 import { useState } from "preact/hooks";
 import { Link } from "preact-router/match";
 import { useTranslation } from "preact-i18next";
-import ro from "../../assets/images/ro.png";
-import en from "../../assets/images/gb.png";
 import i18n from "../../i18n/i18n";
+import MobileLogo from "../MobileLogo/MobileLogo";
+import BurgerMenuIcon from "../BurgerMenuIcon/BurgerMenuIcon";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 const MobileNavigation = () => {
   const { t } = useTranslation();
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [isSelected, setIsSelected] = useState(true);
 
   const openMenu = () => {
@@ -27,47 +28,8 @@ const MobileNavigation = () => {
   return (
     <>
       <div className="mobile-menu py-2 d-flex justify-content-between align-items-center w-100">
-        <div className="mobile-logo">
-          <img src="https://placehold.co/120x40" alt="logo" />
-        </div>
-
-        <div className="mobile-burger">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className={`feather feather-menu ${!isOpen ? "d-none" : "d-block"}`}
-            onClick={openMenu}
-            style="cursor:pointer;"
-          >
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            onClick={openMenu}
-            className={`feather feather-x ${isOpen ? "d-none" : "d-block"}`}
-            >
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-          </svg>
-        </div>
+        <MobileLogo />
+        <BurgerMenuIcon isOpen={isOpen} openMenu={openMenu} />
       </div>
 
       <nav className={`mobile-navigation ${!isOpen ? "d-block" : "d-none"}`}>
@@ -150,36 +112,10 @@ const MobileNavigation = () => {
             </Link>
           </li>
 
-          <div className="image-holder d-flex mt-3" style="gap:5px">
-            <a
-              className="dropdown-item"
-              onClick={() => changeLanguage("ro")}
-              href="#"
-              style="width: 7%;"
-            >
-              <img
-                className={`rounded-small-flag ${
-                  isSelected ? "active-lang" : ""
-                }`}
-                src={ro}
-                alt="romanian"
-              />
-            </a>
-
-            <a
-              className="dropdown-item"
-              onClick={() => changeLanguage("en")}
-              href="#"
-            >
-                <img
-                className={`rounded-small-flag ${
-                  isSelected ? "" : "active-lang"
-                }`}
-                src={en}
-                alt="english"
-              />
-            </a>
-          </div>
+          <LanguageSwitcher
+            changeLanguage={changeLanguage}
+            isSelected={isSelected}
+          />
         </ul>
       </nav>
     </>

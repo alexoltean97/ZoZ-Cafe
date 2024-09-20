@@ -1,19 +1,17 @@
 import unsplash5 from "../../assets/unsplash/unsplash5.jpg";
-
+import backgroud from "../../assets/images/background.jpg";
 const Banner = () => {
   return (
     <div className="intro">
       <div className="container position-relative">
-        <div className="banner">
-          <img
-            src={unsplash5}
-            fit="cover"
-            alt="food background"
-            width="1240px"
-            height="436px"
-          ></img>
+        <div className="banner position-relative">
+        <picture>
+          <source srcset={backgroud} type="image/webp" />
+          <img src={backgroud} fit="cover" alt="food background" height="436" />
+          </picture>
+          
         </div>
-        <div className="intro-content position-absolute w-100">
+        <div className="intro-content position-absolute">
           <h1>Lorem Ipsum Dolor sit Amet</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu neque
