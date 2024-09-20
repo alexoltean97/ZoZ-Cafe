@@ -1,4 +1,4 @@
-import { svgIcons } from "./icons.js";
+import { svgIcons } from "./icons.jsx";
 
 const Categories = ({ activeCategory, setActiveCategory }) => {
   const categories = ["espresso", "beverages", "iced"];
