@@ -1,6 +1,5 @@
 import { Link } from "preact-router/match";
 import { useTranslation } from "preact-i18next";
-
 const Navigation = () => {
   const { t } = useTranslation();
 

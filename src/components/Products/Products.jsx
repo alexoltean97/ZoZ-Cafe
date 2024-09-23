@@ -17,7 +17,7 @@ const Products = ({ activeCategory }) => {
                 <source srcset={mata} type="image/webp"></source>
                 <img src={product.image} alt={product.title} />
               </picture>
-              <h3>{product.title}</h3>
+              <h3 className="product-title">{product.title}</h3>
               <span className="product-label">{product.description}</span>
               <span className="price">{product.price} lei /buc</span>
             </div>

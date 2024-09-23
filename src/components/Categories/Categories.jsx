@@ -22,7 +22,7 @@ const Categories = ({ activeCategory, setActiveCategory }) => {
                 {svgIcons[category]}
               </div>
 
-              <div class="category-label mt-2">
+              <div class="category-label text-center mt-2">
                 <span>{category}</span>
               </div>
             </div>
