@@ -4,9 +4,9 @@ const Categories = ({ activeCategory, setActiveCategory }) => {
   const categories = ["espresso", "beverages", "iced"];
 
   return (
-    <div className="categories">
+    <div className="categories my-4">
       <div className="container">
-        <h3>Categorii</h3>
+        <h3 className="mb-4">Categorii</h3>
         <div className="categories-row d-flex">
           {categories.map((category, index) => (
             <div
@@ -22,7 +22,7 @@ const Categories = ({ activeCategory, setActiveCategory }) => {
                 {svgIcons[category]}
               </div>
 
-              <div class="category-label mt-2">
+              <div class="category-label text-center mt-2">
                 <span>{category}</span>
               </div>
             </div>

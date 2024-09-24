@@ -1,6 +1,5 @@
 import { Link } from "preact-router/match";
 import { useTranslation } from "preact-i18next";
-
 const Navigation = () => {
   const { t } = useTranslation();
 
@@ -9,7 +8,7 @@ const Navigation = () => {
        <img src="https://placehold.co/120x40" alt="logo" />
       <Link
         href="/"
-        className="mx-4 pb-1 main-nav_link position-relative"
+        className="mx-4 pb-2 pb-1 main-nav_link position-relative"
         activeClassName="active-link"
       >
         <svg
@@ -33,7 +32,7 @@ const Navigation = () => {
 
       <Link
         href="/about"
-        className="mx-4 pb-1 main-nav_link position-relative"
+        className="mx-4 pb-2 main-nav_link position-relative"
         activeClassName="active-link"
       >
         <svg
@@ -56,7 +55,7 @@ const Navigation = () => {
       </Link>
       <Link
         href="/contact"
-        className="mx-4 pb-1 main-nav_link position-relative"
+        className="mx-4 pb-2 main-nav_link position-relative"
         activeClassName="active-link"
       >
         <svg

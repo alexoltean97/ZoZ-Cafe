@@ -1,29 +1,14 @@
-import { Link } from "preact-router";
-
+import LogoFooter from "../LogoFooter/LogoFooter";
+import NavigationFooter from "../NavigationFooter/NavigationFooter";
+import SocialMedia from "../SocialMedia/SocialMedia";
 const TopFooter = () => {
-    return(
-        <div className="top-footer d-flex">
-        <div className="logo-footer">
-          <p>Logo here</p>
-        </div>
-
-        <div className="navigation-footer">
-          <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/about">About</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
-          </ul>
-        </div>
-
-        <div className="social-media">
-            <ul>
-                <li>I1</li>
-                <li>I2</li>
-                <li>I3</li>
-            </ul>
-        </div>
-      </div>
-    );
-}
+  return (
+    <div className="top-footer d-flex flex-column flex-md-row justify-content-between py-4 border-bottom">
+      <LogoFooter />
+      <NavigationFooter />
+      <SocialMedia />
+    </div>
+  );
+};
 
 export default TopFooter;
