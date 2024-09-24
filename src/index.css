@@ -35,6 +35,9 @@
   list-style-type: none;
 }
 
+.font-weight-bold{
+  font-weight: bold;
+}
 body {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
@@ -135,6 +138,10 @@ body {
 
 #Dark .dropdown-menu .dropdown-item:hover{
   color: var(--dark-color);
+}
+
+.dropdown{
+  padding: 0 0 0 24px;
 }
 
 .dropdown-menu span {
@@ -278,6 +285,7 @@ body {
     brightness(108%) contrast(105%);
 }
 
+
 .category-label {
   font-size: 12px;
   font-weight: bold;
@@ -289,6 +297,50 @@ body {
   display: block;
   margin: 0 auto;
 }
+
+.card{
+  border:none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#Dark .card{
+  background: var(--dark-color);
+  color:var(--white-color);
+}
+
+.product-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card img{
+  height: 270px;
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.card-body{
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+}
+
+#Dark .card-body{
+  box-shadow: 0px 10px 40px rgba(255, 255, 255, 0.1);
+}
+
+
+#Dark .products h3{
+  color: var(--white-color);;
+}
+
 
 #Dark .product-label{
   color: var(--white-color);
@@ -307,7 +359,9 @@ body {
   color: var(--white-color);
 
 }
-
+.social-media ul{
+  padding: 0 0 0 0;
+}
 #Dark .social-media{
   color: var(--white-color);
 }
@@ -316,16 +370,16 @@ body {
   color: var(--white-color);
 }
 
-#Dark .copyright ul li a {
+#Dark .legal-list ul li a {
   color: var(--white-color);
 }
 
-#Light .copyright ul li a {
+#Light .legal-list ul li a {
   color: var(--dark-color);
 
 }
 
-.copyright ul li a {
+.legal-list ul li a {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
@@ -333,11 +387,59 @@ body {
   font-family: "MainFont", sans-serif;
 }
 
-#Dark .copyright{
+#Dark .legal-list{
   color: var(--white-color);
 }
 
 #Dark .social-media ul li a svg{
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(252deg)
   brightness(108%) contrast(105%);
+}
+
+@media screen and (min-width: 768px) {
+  .intro-content {
+      max-width: 560px;
+  }
+}
+
+@media screen and (max-width:991px){
+  .product-col{
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  h1{
+    font-size: 24px;
+    text-align: center;
+  }
+
+  p{
+    font-size: 16px!important;
+  }
+
+  .intro-content p{
+    text-align: center;
+  }
+  h3{
+    font-size: 20px;
+    text-align: center;
+  }
+  .card{
+    margin: 0 auto;
+  }
+
+  .logo-footer{
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+
+  .navigation-footer ul{
+    padding: 0;
+  }
+
+  .navigation-footer ul li{
+    margin-bottom: 10px;
+    text-align: center;
+  }
 }

@@ -1,23 +1,34 @@
 const BottomFooter = () => {
   return (
     <>
-      <div className="d-flex justify-content-between py-4">
-        <div className="bottom-footer">
+      <div className="bottom-footer d-flex flex-column flex-md-row justify-content-between py-4">
+        <div className="copyright  mb-3 mb-md-0 text-center text-md-start">
           <span>Copyright 14Dev</span>
         </div>
 
-        <div className="copyright">
-          <ul className="text-center m-0">
-            <li className="d-inline mx-2"><a href="#">Privacy Policy</a></li>
-            <li className="d-inline mx-2"><a href="#">Terms and Conditions</a></li>
-            <li className="d-inline mx-2"><a href="#">Cookie Settings</a></li>
+        <div className="legal-list mb-3 mb-md-0">
+          <ul className="list-unstyled d-flex flex-column flex-md-row justify-content-center m-0">
+            <li className="mx-md-2 mb-2 mb-md-0">
+              <a className="pb-2 main-nav_link" href="#">
+                Privacy Policy
+              </a>
+            </li>
+            <li className="mx-md-2 mb-2 mb-md-0">
+              <a className="pb-2 main-nav_link" href="#">
+                Terms and Conditions
+              </a>
+            </li>
+            <li className="mx-md-2 mb-2 mb-md-0">
+              <a className="pb-2 main-nav_link" href="#">
+                Cookie Settings
+              </a>
+            </li>
           </ul>
         </div>
 
-        <div className="">
-            <p>placeholder</p>
+        <div className="text-center text-md-end">
+          <p>placeholder</p>
         </div>
-
       </div>
     </>
   );

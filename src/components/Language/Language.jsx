@@ -25,7 +25,7 @@ const Language = () => {
 
   return (
     <>
-      <div class="dropdown p-4">
+      <div class="dropdown">
         <button className="language-dropdown" onClick={triggerSubMenu}>
           <img src={lngImage} alt="romanian" />
         </button>

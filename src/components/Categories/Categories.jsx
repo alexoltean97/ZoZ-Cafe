@@ -4,9 +4,9 @@ const Categories = ({ activeCategory, setActiveCategory }) => {
   const categories = ["espresso", "beverages", "iced"];
 
   return (
-    <div className="categories">
+    <div className="categories my-4">
       <div className="container">
-        <h3>Categorii</h3>
+        <h3 className="mb-4">Categorii</h3>
         <div className="categories-row d-flex">
           {categories.map((category, index) => (
             <div
