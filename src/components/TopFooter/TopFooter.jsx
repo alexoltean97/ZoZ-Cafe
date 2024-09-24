@@ -30,6 +30,7 @@ const TopFooter = () => {
       <div className="social-media">
         <ul>
           <li className="d-inline mx-2">
+            <a href="#">
             <svg
               width="20px"
               height="20px"
@@ -54,8 +55,10 @@ const TopFooter = () => {
                 fill="#0F0F0F"
               />
             </svg>
+            </a>
           </li>
           <li className="d-inline mx-2">
+            <a href="#">
             <svg
               width="20px"
               height="20px"
@@ -70,6 +73,7 @@ const TopFooter = () => {
                 fill="#0F0F0F"
               />
             </svg>
+            </a>
           </li>
         
         </ul>

@@ -8,9 +8,9 @@ const BottomFooter = () => {
 
         <div className="copyright">
           <ul className="text-center m-0">
-            <li className="d-inline mx-2">Privacy Policy</li>
-            <li className="d-inline mx-2">Terms and Conditions</li>
-            <li className="d-inline mx-2">Cookie Settings</li>
+            <li className="d-inline mx-2"><a href="#">Privacy Policy</a></li>
+            <li className="d-inline mx-2"><a href="#">Terms and Conditions</a></li>
+            <li className="d-inline mx-2"><a href="#">Cookie Settings</a></li>
           </ul>
         </div>
 
