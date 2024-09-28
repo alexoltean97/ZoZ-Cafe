@@ -26,7 +26,7 @@ const BottomFooter = () => {
           </ul>
         </div>
 
-        <div className="text-center text-md-end">
+        <div className="filler-icon text-center text-md-end">
           <svg
             fill="#000000"
             width="40px"
