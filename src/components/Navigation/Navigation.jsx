@@ -4,17 +4,15 @@ import { Link } from "preact-router/match";
 import LogoDark from "../../assets/images/new-black-logo-paint.png";
 import LogoWhite from "../../assets/images/zoz-logo-white-paint.png";
 
-
 const Navigation = () => {
   const { t } = useTranslation();
   const { currentTheme } = useTheme();
   const themeLogo = currentTheme === "Light" ? LogoDark : LogoWhite;
 
-
   return (
     <nav className="main-navigation py-4">
-       <img src={themeLogo} alt="logo" />
-       
+      <img src={themeLogo} alt="logo" />
+
       <Link
         href="/"
         className="mx-4 pb-2 pb-1 main-nav_link position-relative"
@@ -31,7 +29,6 @@ const Navigation = () => {
           stroke-linecap="round"
           stroke-linejoin="round"
           class="feather feather-home position-relative icon-menu"
-         
         >
           <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
           <polyline points="9 22 9 12 15 12 15 22"></polyline>
