@@ -4,7 +4,7 @@ import Categories from "../../components/Categories/Categories";
 import Products from "../../components/Products/Products";
 
 const Home = () => {
-  const [activeCategory, setActiveCategory] = useState("espresso");
+  const [activeCategory, setActiveCategory] = useState("coffe");
 
   return (
     <>

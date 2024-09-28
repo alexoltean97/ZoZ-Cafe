@@ -57,16 +57,59 @@ body {
 
 #Light .main-header {
   background-color: var(--white-color);
-  color: var(--dark-color);;
+  color: var(--dark-color);
 }
 
 .main-nav_link {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  color: var(--main-color);
   text-decoration: none;
   font-family: "MainFont", sans-serif;
+}
+
+#Light .main-nav_link{
+  color: var(--dark-color);
+}
+
+#Dark .main-nav_link{
+  color: var(--white-color);
+}
+
+
+.mobile_main-nav_link{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.mobile_main-nav_link .icon-menu{
+  right: -10px;
+  font-weight: bold;
+}
+
+.mobile-list {
+  font-size: 16px;
+}
+
+.mobile_main-nav_link{
+  font-size: 16px;
+  font-weight: bold;
+}
+#Light .mobile-list{
+  border-bottom:1px solid var(--dark-color);
+}
+
+#Dark .mobile-list{
+  border-bottom:1px solid var(--white-color);
+}
+
+.mobile-list-theme svg{
+  position: relative;
+  left: 10px;
+  bottom: 1px;
 }
 
 #Dark .main-nav_link::after,
@@ -438,8 +481,16 @@ body {
     padding: 0;
   }
 
+  .legal-list ul li {
+    text-align: center;
+  }
+
   .navigation-footer ul li{
     margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .social-media{
     text-align: center;
   }
 }

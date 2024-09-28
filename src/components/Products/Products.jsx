@@ -5,34 +5,38 @@ const Products = ({ activeCategory }) => {
     activeCategory === "ALL"
       ? products
       : products.filter((product) => product.category === activeCategory);
-      return (
-        <div className="products my-4">
-          <div className="container">
-            <h3 className="mb-4">Products</h3>
-            <div className="row product-row">
-              {filteredProducts.map((product) => (
-                <div className="col-lg-3 col-md-6 col-xs-12 product-col" key={product.id}>
-                  <div className="card h-100 d-flex flex-column" style={{ width: "18rem" }}>
-                    {/* Product image */}
-                    <img
-                      className="card-img-top"
-                      src={mata}
-                      alt={product.title}
-                    />
-      
-                    {/* Card body with product details */}
-                    <div className="card-body d-flex flex-column">
-                      <h5 className="card-title font-weight-bold">{product.title}</h5>
-                      <p className="card-text flex-grow-1">{product.description}</p>
-                      <span className="price font-weight-bold">{product.price} lei /buc</span>
-                    </div>
-                  </div>
+  return (
+    <div className="products my-4">
+      <div className="container">
+        <h3 className="mb-4">Products</h3>
+        <div className="row product-row">
+          {filteredProducts.map((product) => (
+            <div
+              className="col-lg-3 col-md-6 col-xs-12 product-col mb-5"
+              key={product.id}
+            >
+              <div
+                className="card h-100 d-flex flex-column"
+                style={{ width: "18rem" }}
+              >
+                <img className="card-img-top" src={mata} alt={product.title} />
+
+                <div className="card-body d-flex flex-column">
+                  <h5 className="card-title font-weight-bold">
+                    {product.title}
+                  </h5>
+                  <p className="card-text flex-grow-1">{product.description}</p>
+                  <span className="price font-weight-bold">
+                    {product.price} lei /buc
+                  </span>
                 </div>
-              ))}
+              </div>
             </div>
-          </div>
+          ))}
         </div>
-      );
+      </div>
+    </div>
+  );
 };
 
 export default Products;

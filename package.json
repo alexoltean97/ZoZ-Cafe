@@ -11,9 +11,11 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "i18next": "^23.15.1",
+    "js-cookie": "^3.0.5",
     "preact": "^10.23.1",
     "preact-i18next": "^11.8.5",
-    "preact-router": "^4.1.2"
+    "preact-router": "^4.1.2",
+    "react-horizontal-scrolling-menu": "^7.1.8"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.9.0",

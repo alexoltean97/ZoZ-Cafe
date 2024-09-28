@@ -1,83 +1,260 @@
 [
-    {
-      "id": 1,
-      "image": "images/espresso.jpg",
-      "title": "Espresso",
-      "description": "A strong and bold shot of espresso made from finely ground coffee beans.",
-      "price": 2.50,
-      "category": "espresso"
+  {
+    "id": 1,
+    "image": "images/espresso.jpg",
+    "title": "Espresso",
+    "description": "A strong and bold shot of espresso made from finely ground coffee beans.",
+    "ingredients": "Ground coffe 9 gr, hot water",
+    "weight": "20 ml",
+    "price": 2.50,
+    "category": "coffe"
+  },
+  {
+    "id": 2,
+    "image": "images/latte.jpg",
+    "title": "Double Espresso",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "Ground coffe 18 gr, hot water",
+    "weight": "35 ml",
+    "price": 3.75,
+    "category": "coffe"
+  },
+  {
+    "id": 3,
+    "image": "images/cappuccino.jpg",
+    "title": "Americano",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "Ground coffe 8 gr, hot water",
+    "weight": "80 ml",
+    "price": 3.50,
+    "category": "coffe"
+  },
+  {
+    "id": 4,
+    "image": "images/americano.jpg",
+    "title": "Long Black",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "Ground coffe 18 gr, hot water",
+    "weight": "100 ml",
+    "price": 2.75,
+    "category": "coffe"
+  },
+  {
+    "id": 5,
+    "image": "images/mocha.jpg",
+    "title": "Espresso Machiatto",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "Espresso, Milk Cream",
+    "weight": "50 ml",
+    "price": 4.00,
+    "category": "coffe"
+  },
+  {
+    "id": 6,
+    "image": "images/flatwhite.jpg",
+    "title": "Cortado",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "Double Espresso, Milk Cream",
+    "weight": "70 ml",
+    "price": 3.85,
+    "category": "coffe"
+  },
+  {
+    "id": 7,
+    "image": "images/icedcoffee.jpg",
+    "title": "Babyccino",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "MilkCream, Honey, Cinnamon",
+    "weight": "180 ml",
+    "price": 3.00,
+    "category": "coffe"
+  },
+  {
+    "id": 8,
+    "image": "images/coldbrew.jpg",
+    "title": "Cappuccino",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "Espresso, Cream Milk",
+    "weight": "180 ml",
+    "price": 3.25,
+    "category": "coffe"
+  },
+  {
+    "id": 9,
+    "image": "images/caramelmacchiato.jpg",
+    "title": "Flat white",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "Espresso Double, Cream Milk",
+    "weight": "180 ml",
+    "price": 4.25,
+    "category": "coffe"
+  },
+  {
+    "id": 10,
+    "image": "images/affogato.jpg",
+    "title": "Latte",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "Espresso Single",
+    "weight": "20 ml",
+    "price": 4.50,
+    "category": "coffe",
+    "extrashot": {
+      "name": "+ Extra Shot",
+      "weight": "20ml",
+      "description": "Espresso Single",
+      "ingredients": "espresso Single"
     },
-    {
-      "id": 2,
-      "image": "images/latte.jpg",
-      "title": "Latte",
-      "description": "Smooth and creamy latte with a perfect balance of espresso and steamed milk.",
-      "price": 3.75,
-      "category": "beverages"
+    "extraMilkOat": {
+      "name": "+ Oat Milk ",
+      "weight": "20ml",
+      "description": "Bautura vegetale din ovaz",
+      "ingredients": "espresso Single"
     },
-    {
-      "id": 3,
-      "image": "images/cappuccino.jpg",
-      "title": "Cappuccino",
-      "description": "A classic cappuccino with a rich layer of foam and a robust espresso flavor.",
-      "price": 3.50,
-      "category": "iced"
-    },
-    {
-      "id": 4,
-      "image": "images/americano.jpg",
-      "title": "Americano",
-      "description": "A strong and diluted espresso shot, giving a rich coffee flavor without the intensity.",
-      "price": 2.75,
-      "category": "espresso"
-    },
-    {
-      "id": 5,
-      "image": "images/mocha.jpg",
-      "title": "Mocha",
-      "description": "A delightful mix of espresso, chocolate, and steamed milk topped with whipped cream.",
-      "price": 4.00,
-      "category": "beverages"
-    },
-    {
-      "id": 6,
-      "image": "images/flatwhite.jpg",
-      "title": "Flat White",
-      "description": "A silky flat white with a strong espresso shot and velvety microfoam.",
-      "price": 3.85,
-      "category": "iced"
-    },
-    {
-      "id": 7,
-      "image": "images/icedcoffee.jpg",
-      "title": "Iced Coffee",
-      "description": "A refreshing iced coffee brewed to perfection and served over ice.",
-      "price": 3.00,
-      "category": "espresso"
-    },
-    {
-      "id": 8,
-      "image": "images/coldbrew.jpg",
-      "title": "Cold Brew",
-      "description": "Smooth and less acidic cold brew coffee, steeped for 12 hours for a rich flavor.",
-      "price": 3.25,
-      "category": "beverages"
-    },
-    {
-      "id": 9,
-      "image": "images/caramelmacchiato.jpg",
-      "title": "Caramel Macchiato",
-      "description": "A delicious caramel macchiato with layers of espresso, milk, and caramel syrup.",
-      "price": 4.25,
-      "category": "iced"
-    },
-    {
-      "id": 10,
-      "image": "images/affogato.jpg",
-      "title": "Affogato",
-      "description": "A decadent dessert with a scoop of vanilla ice cream topped with a shot of hot espresso.",
-      "price": 4.50,
-      "category": "espresso"
+    "extraMilkPeas": {
+      "name": "+ Peas Milk ",
+      "weight": "20ml",
+      "description": "Bautura vegetale din mazare",
+      "ingredients": "espresso Single"
     }
-  ]
-  
+  },
+  {
+    "id": 10,
+    "image": "images/caramelmacchiato.jpg",
+    "title": "Shakerado",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "Espresso, Milk, Home Made Sirop Muscovado, Ice",
+    "weight": "300 ml",
+    "price": 4.25,
+    "category": "iced"
+  },
+  {
+    "id": 11,
+    "image": "images/caramelmacchiato.jpg",
+    "title": "Iced Latte",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "Espresso, Milk, Ice",
+    "weight": "300 ml",
+    "price": 4.25,
+    "category": "iced"
+  },
+  {
+    "id": 11,
+    "image": "images/caramelmacchiato.jpg",
+    "title": "Frappe",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "Espresso Double, Milk, Ice, whipped cream, Vanila IceCream, biscuits",
+    "weight": "300 ml",
+    "price": 4.25,
+    "category": "frappe"
+  },
+  {
+    "id": 12,
+    "image": "images/caramelmacchiato.jpg",
+    "title": "Cold brew tonic",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "Cold brewed coffee for 16 hours, tonic water, ice",
+    "weight": "300 ml",
+    "price": 4.25,
+    "category": "frappe"
+  },
+  {
+    "id": 13,
+    "image": "images/caramelmacchiato.jpg",
+    "title": "Cold brew latte",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "Cold brewed coffee for 16 hours, water, ice",
+    "weight": "300 ml",
+    "price": 4.25,
+    "category": "frappe"
+  },
+  {
+    "id": 14,
+    "image": "images/caramelmacchiato.jpg",
+    "title": "Prana chai",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "Prana chai, Oatmilk",
+    "weight": "180 ml",
+    "price": 4.25,
+    "category": "noncoffe"
+  },
+  {
+    "id": 15,
+    "image": "images/caramelmacchiato.jpg",
+    "title": "Matcha Latte",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "Powder tea matcha, oat milk cream",
+    "weight": "180 ml",
+    "price": 4.25,
+    "category": "noncoffe"
+  },
+  {
+    "id": 16,
+    "image": "images/caramelmacchiato.jpg",
+    "title": "Hot cocoa",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "Powder Chocholate, CreamMilk",
+    "weight": "200 ml",
+    "price": 4.25,
+    "category": "noncoffe"
+  },
+  {
+    "id": 17,
+    "image": "images/caramelmacchiato.jpg",
+    "title": "Fruit iced tea",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "fruit infusion, sugar syrup, lemon, berries, ice",
+    "weight": "400 ml",
+    "price": 4.25,
+    "category": "icedtea"
+  },
+  {
+    "id": 18,
+    "image": "images/caramelmacchiato.jpg",
+    "title": "Mint iced tea",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "mint infusion, lemon, sugar syrup, mint, ice",
+    "weight": "400 ml",
+    "price": 4.25,
+    "category": "icedtea"
+  },
+  {
+    "id": 19,
+    "image": "images/caramelmacchiato.jpg",
+    "title": "Gingershot",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "mint infusion, lemon, sugar syrup, mint, ice",
+    "weight": "400 ml",
+    "price": 4.25,
+    "category": "gingershot"
+  },
+  {
+    "id": 20,
+    "image": "images/caramelmacchiato.jpg",
+    "title": "Coca Cola",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "mint infusion, lemon, sugar syrup, mint, ice",
+    "weight": "400 ml",
+    "price": 4.25,
+    "category": "beverages"
+  },
+  {
+    "id": 21,
+    "image": "images/caramelmacchiato.jpg",
+    "title": "Sprite",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "mint infusion, lemon, sugar syrup, mint, ice",
+    "weight": "400 ml",
+    "price": 4.25,
+    "category": "beverages"
+  },
+  {
+    "id": 22,
+    "image": "images/caramelmacchiato.jpg",
+    "title": "Fanta",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "mint infusion, lemon, sugar syrup, mint, ice",
+    "weight": "400 ml",
+    "price": 4.25,
+    "category": "beverages"
+  }
+]
