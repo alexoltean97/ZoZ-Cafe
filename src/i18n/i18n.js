@@ -16,7 +16,11 @@ i18n.use(initReactI18next).init({
         terms_condition: "Termeni și condiții",
         cookie_settings: "Setări cookie",
         romanian: "Romana",
-        english: "Engleza"
+        english: "Engleza",
+        titleEspresso: "",
+        espressoDesc: "Desc in romana",
+        ingredientsEspresso: "Cafea macinata 9 gr, apa fierbinte",
+        ingredientsDoubleEspresso: "Cafea macinata 18 gr, apa fierbinter"
       }
     },
 
@@ -33,7 +37,10 @@ i18n.use(initReactI18next).init({
         terms_condition: "Terms and Conditions",
         cookie_settings: "Cookie Settings",
         romanian: "Romanian",
-        english: "English"
+        english: "English",
+        espressoDesc: "Desc in english",
+        ingredientsEspresso: "Ground coffe 9 gr, hot water",
+        ingredientsDoubleEspresso: "Ground coffe 18 gr, hot water"
       }
     }
   },

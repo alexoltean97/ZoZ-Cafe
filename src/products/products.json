@@ -3,12 +3,13 @@
     "id": 1,
     "image": "images/espresso.jpg",
     "title": "Espresso",
-    "description": "A strong and bold shot of espresso made from finely ground coffee beans.",
-    "ingredients": "Ground coffe 9 gr, hot water",
+    "description": "espressoDesc",
+    "ingredients": "ingredientsEspresso",
     "weight": "20 ml",
     "price": 2.50,
     "category": "coffe"
   },
+
   {
     "id": 2,
     "image": "images/latte.jpg",
@@ -257,4 +258,5 @@
     "price": 4.25,
     "category": "beverages"
   }
+  
 ]
