@@ -3,12 +3,11 @@ import en from "../../assets/images/gb.png";
 
 const LanguageSwitcher = ({ changeLanguage, isSelected }) => {
   return (
-    <div className="image-holder d-flex mt-3" style="gap:5px">
+    <div className="image-holder d-flex mt-3">
       <a
         className="dropdown-item"
         onClick={() => changeLanguage("ro")}
         href="#"
-        style="width: 7%;"
       >
         <img
           className={`rounded-small-flag ${isSelected ? "active-lang" : ""}`}
