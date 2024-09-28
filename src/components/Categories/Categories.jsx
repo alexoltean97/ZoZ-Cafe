@@ -1,7 +1,7 @@
 import { svgIcons } from "./icons.jsx";
 
 const Categories = ({ activeCategory, setActiveCategory }) => {
-  const categories = ["espresso", "beverages", "iced"];
+  const categories = ["coffe", "iced", "frappe", "noncoffe", "icedtea", "gingershot", "beverages"];
 
   return (
     <div className="categories my-4">
