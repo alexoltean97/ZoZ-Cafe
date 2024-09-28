@@ -12,7 +12,7 @@ const Products = ({ activeCategory }) => {
         <div className="row product-row">
           {filteredProducts.map((product) => (
             <div
-              className="col-lg-3 col-md-6 col-xs-12 product-col"
+              className="col-lg-3 col-md-6 col-xs-12 product-col mb-5"
               key={product.id}
             >
               <div
