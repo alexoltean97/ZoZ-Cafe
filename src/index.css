@@ -494,3 +494,36 @@ body {
     text-align: center;
   }
 }
+
+
+.arrow-button {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 5px 10px;
+  margin: 10px;
+  z-index: 1;
+}
+
+.left-arrow {
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right-arrow {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroll-item {
+  display: inline-block;
+}
+
+.category-box {
+  display: inline-block;
+}
