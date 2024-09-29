@@ -1,9 +1,8 @@
 const Schedule = () => {
   return (
-    <div class="schedule">
-      <h3>Store Hours</h3>
-      <table>
-        <thead>
+    <div className="schedule my-4 ml-xl-2 ml-lg-2">
+      <table className="table table-striped table-bordered table-hover theme-table">
+        <thead className="thead-dark">
           <tr>
             <th>Day</th>
             <th>Opening Hours</th>
@@ -34,7 +33,7 @@ const Schedule = () => {
             <td>Saturday</td>
             <td>09:00 AM - 03:00 PM</td>
           </tr>
-          <tr>
+          <tr className="table-danger">
             <td>Sunday</td>
             <td>Closed</td>
           </tr>
