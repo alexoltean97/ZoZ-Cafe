@@ -39,7 +39,6 @@ const About = () => {
 
           <div class="col-lg-3">
             <div className="images-content">
-              <img className="mb-2" src="https://placehold.co/400"></img>
               <img src="https://placehold.co/400"></img>
             </div>
           </div>

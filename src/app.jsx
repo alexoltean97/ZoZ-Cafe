@@ -1,24 +1,33 @@
 import { Router } from "preact-router";
+import { ThemeProvider, useTheme } from "./context/ThemeContext";
+import { ModalProvider, useModal } from "./context/ModalContext";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Modal from "./components/Modal/Modal";
+import ModalContent from "./components/ModalContent/ModalContent";
 import "./app.css";
-import { ThemeProvider, useTheme } from "./context/ThemeContext";
-
 const AppContent = () => {
   const { currentTheme } = useTheme();
+  const { isModalOpen, modalTitle, closeModal } = useModal();
 
   return (
-    <div id={currentTheme}>
+    <div id={currentTheme} className="page-container">
       <Header />
-      
-      <Router>
-        <Home path="/" />
-        <About path="/about" />
-        <Contact path="/contact" />
-      </Router>
+      {/* <button onClick={() => setIsModalOpen(true)}>Open Modal</button> */}
+      <Modal isOpen={isModalOpen} onClose={closeModal} modalTitle={modalTitle}>
+        <ModalContent />
+      </Modal>
+      <main className="content">
+        <Router>
+          <Home path="/" />
+          <About path="/about" />
+          <Contact path="/contact" />
+        </Router>
+      </main>
+
       <Footer />
     </div>
   );
@@ -27,7 +36,9 @@ const AppContent = () => {
 const App = () => {
   return (
     <ThemeProvider>
-      <AppContent />
+      <ModalProvider>
+        <AppContent />
+      </ModalProvider>
     </ThemeProvider>
   );
 };

@@ -1,4 +1,8 @@
+import { useModal } from "../../context/ModalContext";
+
 const BottomFooter = () => {
+  const { openModalWithTitle } = useModal();
+
   return (
     <>
       <div className="bottom-footer d-flex flex-column flex-md-row justify-content-between py-4">
@@ -9,17 +13,29 @@ const BottomFooter = () => {
         <div className="legal-list mb-3 mb-md-0">
           <ul className="list-unstyled d-flex flex-column flex-md-row justify-content-center m-0">
             <li className="mx-md-2 mb-2 mb-md-0">
-              <a className="pb-2 main-nav_link" href="#">
+              <a
+                className="pb-2 main-nav_link"
+                href="#"
+                onClick={() => openModalWithTitle("Privacy Policy")}
+              >
                 Privacy Policy
               </a>
             </li>
             <li className="mx-md-2 mb-2 mb-md-0">
-              <a className="pb-2 main-nav_link" href="#">
+              <a
+                className="pb-2 main-nav_link"
+                href="#"
+                onClick={() => openModalWithTitle("Terms and Conditions")}
+              >
                 Terms and Conditions
               </a>
             </li>
             <li className="mx-md-2 mb-2 mb-md-0">
-              <a className="pb-2 main-nav_link" href="#">
+              <a
+                className="pb-2 main-nav_link"
+                href="#"
+                onClick={() => openModalWithTitle("Cookie Settings")}
+              >
                 Cookie Settings
               </a>
             </li>
