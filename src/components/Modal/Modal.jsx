@@ -1,7 +1,7 @@
 import { createPortal } from "preact/compat";
 import { useEffect } from "preact/hooks";
 
-const Modal = ({ isOpen, onClose, children, modalTitle }) => {
+const Modal = ({ isOpen, onClose, children }) => {
   const modalRoot = document.getElementById("modal-root");
 
   useEffect(() => {
@@ -32,15 +32,24 @@ const Modal = ({ isOpen, onClose, children, modalTitle }) => {
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title" id="exampleModalLabel">
-                {modalTitle}
+                General Settings
               </h5>
-              <button type="button" className="close" onClick={onClose} aria-label="Close">
+              <button
+                type="button"
+                className="close"
+                onClick={onClose}
+                aria-label="Close"
+              >
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div className="modal-body">{children}</div>
             <div className="modal-footer">
-              <button type="button" className="btn btn-secondary" onClick={onClose}>
+              <button
+                type="button"
+                className="btn btn-secondary"
+                onClick={onClose}
+              >
                 Close
               </button>
               <button type="button" className="btn btn-primary">
