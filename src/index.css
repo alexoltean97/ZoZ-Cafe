@@ -482,6 +482,36 @@ body {
 #Light .schedule {
   color: var(--dark-color);
 }
+.modal-header button {
+  background: none;
+  border: none;
+  font-size: 27px;
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  max-width: 800px;
+}
+
+.nav-tabs{
+  border: none;
+}
+.nav-tabs .nav-link{
+  border:none;
+  color: var(--dark-color);
+  font-size: 18px;
+}
+.nav-tabs .nav-link.active{
+  border:none;
+}
+
+.nav-tabs .nav-link:hover {
+  border:none;
+}
+
+.nav-tabs .nav-item:first-child{
+  padding-left: 0;
+}
 
 @media screen and (min-width: 768px) {
   .intro-content {

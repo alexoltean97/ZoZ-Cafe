@@ -1,6 +1,7 @@
 import { createPortal } from "preact/compat";
 import { useEffect } from "preact/hooks";
-
+import ModalHeader from "../ModalHeader/ModalHeader";
+import ModalFooter from "../ModalFooter/ModalFooter";
 const Modal = ({ isOpen, onClose, children }) => {
   const modalRoot = document.getElementById("modal-root");
 
@@ -30,32 +31,9 @@ const Modal = ({ isOpen, onClose, children }) => {
       >
         <div className="modal-dialog" role="document">
           <div className="modal-content">
-            <div className="modal-header">
-              <h5 className="modal-title" id="exampleModalLabel">
-                General Settings
-              </h5>
-              <button
-                type="button"
-                className="close"
-                onClick={onClose}
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
+            <ModalHeader close={onClose} />
             <div className="modal-body">{children}</div>
-            <div className="modal-footer">
-              <button
-                type="button"
-                className="btn btn-secondary"
-                onClick={onClose}
-              >
-                Close
-              </button>
-              <button type="button" className="btn btn-primary">
-                Save changes
-              </button>
-            </div>
+            <ModalFooter close={onClose} />
           </div>
         </div>
       </div>
