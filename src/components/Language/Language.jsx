@@ -26,7 +26,7 @@ const Language = () => {
   return (
     <>
       <div class="dropdown">
-        <button className="language-dropdown" onClick={triggerSubMenu}>
+        <button className="language-dropdown p-0" onClick={triggerSubMenu}>
           <img src={lngImage} alt="romanian" />
         </button>
         <ul class={`dropdown-menu ${subMenu ? "d-block" : ""}`}>

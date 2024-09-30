@@ -18,12 +18,12 @@ const Products = ({ activeCategory }) => {
         
           {filteredProducts.map((product) => (
             <div
-              className="col-xl-3 col-lg-4 col-md-6 col-xs-12 mb-5"
+              className="col-xl-3 col-lg-4 col-md-6 col-xs-12 mb-5 px-3"
               key={product.id}
             >
               <div
                 className="card h-100 d-flex flex-column"
-                style={{ width: "18rem" }}
+               
               >
                 <img className="card-img-top" src={mata} alt={product.title} />
 

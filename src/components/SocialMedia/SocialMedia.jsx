@@ -30,7 +30,7 @@ const SocialMedia = () => {
             </svg>
           </a>
         </li>
-        <li className="d-inline mx-1">
+        <li className="d-inline">
           <a href="#">
             <svg
               width="20px"
