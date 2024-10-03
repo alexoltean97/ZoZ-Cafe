@@ -525,9 +525,11 @@ body {
 .modal-dialog {
   position: relative;
   width: auto;
-  max-width: 900px;
+  max-width: 600px;
 }
-
+.modal-body{
+  text-align: center;
+}
 
 .dark-modal-content {
   background-color: var(--dark-color);
@@ -539,17 +541,21 @@ body {
   color: var(--white-color);
 }
 
+.modal-footer{
+  border: none;
+}
+
 @media screen and (min-width: 768px) {
   .intro-content {
     max-width: 560px;
   }
 
-  .main-navigation{
+  .main-navigation {
     position: relative;
     right: 25px;
   }
 
-  .logo-footer img{
+  .logo-footer img {
     position: relative;
     right: 25px;
   }
@@ -564,7 +570,6 @@ body {
     margin-bottom: 20px;
   }
 }
-
 
 @media screen and (max-width: 767px) {
   h1 {
@@ -637,32 +642,34 @@ body {
     padding: 0 25px;
   }
 
-  .product-image img{
+  .product-image img {
     display: block;
     margin: 0 auto;
   }
 
-  .product-info button{
+  .product-info button {
     font-size: 14px;
   }
 
   .custom-nav-tabs .nav-link {
-    padding: 7px 10px!important;
+    padding: 7px 10px !important;
   }
 
-  .product-title{
+  .product-title {
     text-align: center;
   }
 
-  .product-info{
+  .product-info {
     text-align: center;
   }
 
-  .product-info .custom-nav-tabs{
+  .product-info .custom-nav-tabs {
     display: inline-flex;
-
   }
 
+  .suggested-products h4 {
+    text-align: center;
+  }
 }
 
 .scroll-item {
@@ -730,26 +737,24 @@ body {
   background-color: var(--white-color);
   border-radius: 4px 4px 0 0;
 
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; 
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .custom-nav-tabs .nav-link:hover {
   background-color: var(--dark-color);
   color: var(--white-color);
- 
 }
 
 .custom-nav-tabs .nav-link.active {
   color: var(--white-color);
   background-color: var(--dark-color);
-
 }
 
 .custom-nav-tabs .nav-link:focus {
   outline: none;
 }
 
-.product-info ul{
+.product-info ul {
   border: none;
 }
 
@@ -767,7 +772,6 @@ body {
   color: var(--white-color);
   background-color: var(--dark-color);
 }
-
 
 #Dark .custom-nav-tabs .nav-link {
   color: var(--white-color);
