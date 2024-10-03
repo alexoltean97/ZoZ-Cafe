@@ -24,13 +24,17 @@ const Product = () => {
         <h3>{product.title}</h3>
       </div>
 
-      <div className="d-flex">
+      <div className="row">
+        <div className="col-lg-3">
         <ProductImage />
-
+        </div>
+    
+        <div className="col-lg-9">
         <div className="product-info">
           <ProductTabs activeTab={activeTab} setActiveTab={setActiveTab} />
           <ProductTabContent activeTab={activeTab} product={product} />
         </div>
+    </div>
       </div>
     </div>
   );
