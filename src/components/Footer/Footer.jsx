@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <div className="main-footer">
       <div className="container">
-      <TopFooter />
-      <BottomFooter />
+        <TopFooter />
+        <BottomFooter />
       </div>
     </div>
   );

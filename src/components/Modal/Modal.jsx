@@ -1,10 +1,12 @@
 import { createPortal } from "preact/compat";
+import { useTheme } from "../../context/ThemeContext";
 import { useEffect } from "preact/hooks";
 import ModalHeader from "../ModalHeader/ModalHeader";
 import ModalFooter from "../ModalFooter/ModalFooter";
 const Modal = ({ isOpen, onClose, children }) => {
   const modalRoot = document.getElementById("modal-root");
-
+  const { currentTheme } = useTheme();
+  console.log(currentTheme);
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -30,7 +32,11 @@ const Modal = ({ isOpen, onClose, children }) => {
         aria-hidden={!isOpen}
       >
         <div className="modal-dialog" role="document">
-          <div className="modal-content">
+          <div
+            className={`modal-content ${
+              currentTheme === "Dark" ? "dark-modal-content" : ""
+            }`}
+          >
             <ModalHeader close={onClose} />
             <div className="modal-body">{children}</div>
             <ModalFooter close={onClose} />

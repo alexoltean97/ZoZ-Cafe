@@ -39,7 +39,7 @@ const MobileNavigation = () => {
             <Link
               href="/"
               className="mx-4 pb-1 mobile_main-nav_link"
-              activeClassName="mobile-active-link"
+              activeClassName="mobile-active-link" 
               style="margin-left: 5px !important;"
             >
               {t("home")}

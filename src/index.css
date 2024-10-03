@@ -56,6 +56,40 @@ body {
   font-family: "MainFont", sans-serif;
 }
 
+.btn-primary {
+  background-color: var(--dark-color);
+  border: 1px solid transparent;
+}
+
+#Dark .btn-primary {
+  background-color: var(--white-color);
+  border: 1px solid transparent;
+}
+
+.btn-primary:hover {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+  border: 1px solid var(--dark-color);
+}
+
+.dark-modal-content .btn-primary{
+  background-color: var(--white-color);
+  color: var(--dark-color);
+  border: 1px solid transparent;
+}
+
+.dark-modal-content .btn-primary:hover{
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+}
+
+#Dark .btn-primary:hover {
+  background-color: var(--dark-color);
+  color: var(--dark-color);
+  border: 1px solid var(--white-color);
+}
+
 .main-header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -487,29 +521,67 @@ body {
   border: none;
   font-size: 27px;
 }
+
 .modal-dialog {
   position: relative;
   width: auto;
-  max-width: 800px;
+  max-width: 900px;
 }
 
-.nav-tabs{
+.modal-body nav .nav-tabs .active {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  font-weight: bold;
+  transition: background-color 0.3s ease, border-bottom 0.3s ease,
+    color 0.3s ease;
+}
+
+.dark-modal-content {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+
+.dark-modal-content .modal-body nav .nav-tabs {
+  color: var(--white-color);
+}
+
+.dark-modal-content .modal-body nav .nav-tabs .active {
+  color: var(--white-color);
+}
+
+.dark-modal-content nav .nav-tabs .active {
+  background-color: var(--light-color);
+  color: var(--white-color);
+  font-weight: bold;
+  transition: background-color 0.3s ease, border-bottom 0.3s ease,
+    color 0.3s ease;
+}
+
+.dark-modal-content .nav-tabs .nav-link {
+  color: var(--white-color);
+}
+
+.dark-modal-content .close{
+  color: var(--white-color);
+}
+
+.nav-tabs {
   border: none;
 }
-.nav-tabs .nav-link{
-  border:none;
+.nav-tabs .nav-link {
+  border: none;
   color: var(--dark-color);
   font-size: 18px;
 }
-.nav-tabs .nav-link.active{
-  border:none;
+.nav-tabs .nav-link.active {
+  border: none;
 }
 
 .nav-tabs .nav-link:hover {
-  border:none;
+  border: none;
 }
 
-.nav-tabs .nav-item:first-child{
+.nav-tabs .nav-item:first-child {
   padding-left: 0;
 }
 

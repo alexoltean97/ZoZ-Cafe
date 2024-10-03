@@ -12,25 +12,22 @@ export const ModalProvider = ({ children }) => {
 
   const getTitleFromTab = (tabName) => {
     switch (tabName) {
+      case "cookie":
+        return "Cookie Settings";
       case "privacy":
         return "Privacy Policy";
       case "terms":
         return "Terms and Conditions";
-      case "cookie":
-        return "Cookie Settings";
+
       default:
         return "Privacy Policy";
     }
   };
 
-  const openModalWithTitle = (title) => {
-    setModalTitle(title);
-    setActiveTab(getTabFromTitle(title));
-    setIsModalOpen(true);
-  };
-
   const getTabFromTitle = (title) => {
     switch (title) {
+      case "Cookie Settings":
+        return "cookie";
       case "Privacy Policy":
         return "privacy";
       case "Terms and Conditions":
@@ -40,6 +37,12 @@ export const ModalProvider = ({ children }) => {
       default:
         return "privacy";
     }
+  };
+
+  const openModalWithTitle = (title) => {
+    setModalTitle(title);
+    setActiveTab(getTabFromTitle(title));
+    setIsModalOpen(true);
   };
 
   const closeModal = () => setIsModalOpen(false);

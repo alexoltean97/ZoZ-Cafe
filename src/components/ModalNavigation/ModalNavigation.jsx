@@ -1,7 +1,18 @@
 const ModalNavigation = ({ active, handleTab }) => {
   return (
     <nav>
-      <div className="nav nav-tabs" id="nav-tab" role="tablist">
+      <div className="nav nav-tabs pb-3" id="nav-tab" role="tablist">
+      <button
+          className={`nav-item nav-link ${active === "cookie" ? "active" : ""}`}
+          onClick={() => handleTab("cookie")}
+          id="nav-cookie-tab"
+          role="tab"
+          aria-controls="nav-cookie"
+          aria-selected={active === "cookie"}
+        >
+          Cookie Settings
+        </button>
+        
         <button
           className={`nav-item nav-link ${
             active === "privacy" ? "active" : ""
@@ -24,16 +35,7 @@ const ModalNavigation = ({ active, handleTab }) => {
         >
           Terms and Conditions
         </button>
-        <button
-          className={`nav-item nav-link ${active === "cookie" ? "active" : ""}`}
-          onClick={() => handleTab("cookie")}
-          id="nav-cookie-tab"
-          role="tab"
-          aria-controls="nav-cookie"
-          aria-selected={active === "cookie"}
-        >
-          Cookie Settings
-        </button>
+
       </div>
     </nav>
   );
