@@ -7,15 +7,13 @@ const ThemeContext = createContext();
 export const useTheme = () => useContext(ThemeContext);
 
 export const ThemeProvider = ({ children }) => {
-
   const [currentTheme, setCurrentTheme] = useState(
     Cookies.get("theme") || "Light"
   );
 
   useEffect(() => {
-    Cookies.set("theme", currentTheme, { expires: 365, path: "/" }); 
+    Cookies.set("theme", currentTheme, { expires: 365, path: "/" });
   }, [currentTheme]);
-
 
   const toggleTheme = () => {
     setCurrentTheme(currentTheme === "Light" ? "Dark" : "Light");

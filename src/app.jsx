@@ -4,29 +4,33 @@ import { ModalProvider, useModal } from "./context/ModalContext";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
+import Terms from "./pages/Terms/Terms";
+import Privacy from "./pages/Privacy/Privacy";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Modal from "./components/Modal/Modal";
 import ModalBody from "./components/ModalBody/ModalBody";
 import "./app.css";
+
 const AppContent = () => {
   const { currentTheme } = useTheme();
-  const { isModalOpen, modalTitle, closeModal } = useModal();
+  const { isModalOpen, closeModal } = useModal();
 
   return (
     <div id={currentTheme} className="page-container">
       <Header />
       <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <ModalBody modalTitle={modalTitle} />
+        <ModalBody />
       </Modal>
       <main className="content">
         <Router>
           <Home path="/" />
           <About path="/about" />
           <Contact path="/contact" />
+          <Privacy path="/privacy" />
+          <Terms path="/terms" />
         </Router>
       </main>
-
       <Footer />
     </div>
   );

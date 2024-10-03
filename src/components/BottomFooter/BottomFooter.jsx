@@ -2,7 +2,7 @@ import { useModal } from "../../context/ModalContext";
 import { svgIcons } from "./icons";
 import LegalList from "../LegalList/LegalList";
 const BottomFooter = () => {
-  const { openModalWithTitle } = useModal();
+  const { openModal } = useModal();
 
   return (
     <>
@@ -11,7 +11,7 @@ const BottomFooter = () => {
           <span>Copyright 14Dev</span>
         </div>
 
-        <LegalList openModal={openModalWithTitle} />
+        <LegalList openModal={openModal} />
 
         <div className="filler-icon text-center text-md-end">
           {svgIcons.bean}

@@ -1,5 +1,7 @@
+// context/ModalContext.js
 import { createContext } from "preact";
-import { useState, useContext } from "preact/hooks";
+import { useState, useContext, useEffect } from "preact/hooks";
+import Cookies from "js-cookie";
 
 const ModalContext = createContext();
 
@@ -7,57 +9,27 @@ export const useModal = () => useContext(ModalContext);
 
 export const ModalProvider = ({ children }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalTitle, setModalTitle] = useState("");
-  const [activeTab, setActiveTab] = useState("privacy");
 
-  const getTitleFromTab = (tabName) => {
-    switch (tabName) {
-      case "cookie":
-        return "Cookie Settings";
-      case "privacy":
-        return "Privacy Policy";
-      case "terms":
-        return "Terms and Conditions";
-
-      default:
-        return "Privacy Policy";
+  useEffect(() => {
+    const consent = Cookies.get("cookieConsent");
+    if (!consent) {
+      setIsModalOpen(true); 
     }
-  };
+  }, []);
 
-  const getTabFromTitle = (title) => {
-    switch (title) {
-      case "Cookie Settings":
-        return "cookie";
-      case "Privacy Policy":
-        return "privacy";
-      case "Terms and Conditions":
-        return "terms";
-      case "Cookie Settings":
-        return "cookie";
-      default:
-        return "privacy";
-    }
-  };
+  const openModal = () => setIsModalOpen(true);
 
-  const openModalWithTitle = (title) => {
-    setModalTitle(title);
-    setActiveTab(getTabFromTitle(title));
-    setIsModalOpen(true);
+  const closeModal = () => {
+    Cookies.set("cookieConsent", "true", { expires: 365 }); 
+    setIsModalOpen(false);
   };
-
-  const closeModal = () => setIsModalOpen(false);
 
   return (
     <ModalContext.Provider
       value={{
         isModalOpen,
-        modalTitle,
-        activeTab,
-        setActiveTab,
-        setModalTitle,
-        openModalWithTitle,
+        openModal,
         closeModal,
-        getTitleFromTab,
       }}
     >
       {children}
