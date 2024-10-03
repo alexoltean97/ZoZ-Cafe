@@ -8,11 +8,11 @@ const Contact = () => {
         <p>Treceti si vizitati pe la cele mai smechere locatii din Arad</p>
 
         <div className="row">
-          <div className="col-lg-6 col-sm-12 col-xs-12">
+          <div className="col-lg-8 col-sm-12 col-xs-12">
             <Schedule />
           </div>
 
-          <div className="col-lg-6 col-sm-12 col-xs-12">
+          <div className="col-lg-4 col-sm-12 col-xs-12">
             <Map />
           </div>
         </div>

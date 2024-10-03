@@ -1,9 +1,12 @@
 import { createPortal } from "preact/compat";
+import { useTheme } from "../../context/ThemeContext";
 import { useEffect } from "preact/hooks";
-
-const Modal = ({ isOpen, onClose, children, modalTitle }) => {
+import ModalHeader from "../ModalHeader/ModalHeader";
+import ModalFooter from "../ModalFooter/ModalFooter";
+const Modal = ({ isOpen, onClose, children }) => {
   const modalRoot = document.getElementById("modal-root");
-
+  const { currentTheme } = useTheme();
+  console.log(currentTheme);
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -29,24 +32,14 @@ const Modal = ({ isOpen, onClose, children, modalTitle }) => {
         aria-hidden={!isOpen}
       >
         <div className="modal-dialog" role="document">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h5 className="modal-title" id="exampleModalLabel">
-                {modalTitle}
-              </h5>
-              <button type="button" className="close" onClick={onClose} aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
+          <div
+            className={`modal-content ${
+              currentTheme === "Dark" ? "dark-modal-content" : ""
+            }`}
+          >
+            <ModalHeader close={onClose} />
             <div className="modal-body">{children}</div>
-            <div className="modal-footer">
-              <button type="button" className="btn btn-secondary" onClick={onClose}>
-                Close
-              </button>
-              <button type="button" className="btn btn-primary">
-                Save changes
-              </button>
-            </div>
+            <ModalFooter close={onClose} />
           </div>
         </div>
       </div>

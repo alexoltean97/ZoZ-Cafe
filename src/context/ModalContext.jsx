@@ -1,34 +1,38 @@
+// context/ModalContext.js
 import { createContext } from "preact";
-import { useState, useContext } from "preact/hooks";
+import { useState, useContext, useEffect } from "preact/hooks";
+import Cookies from "js-cookie";
 
 const ModalContext = createContext();
 
 export const useModal = () => useContext(ModalContext);
 
-export const ModalProvider = ({children}) => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [modalTitle, setModalTitle] = useState("");
+export const ModalProvider = ({ children }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const openModalWithTitle = (title) => {
-        setModalTitle(title);
-        setIsModalOpen(true);
-    };
+  useEffect(() => {
+    const consent = Cookies.get("cookieConsent");
+    if (!consent) {
+      setIsModalOpen(true); 
+    }
+  }, []);
 
-    const closeModal = () => {
-        setIsModalOpen(false);
-        setIsModalTitle("");
-    };
+  const openModal = () => setIsModalOpen(true);
 
-    return(
-        <ModalContext.Provider
-            value={{
-                isModalOpen,
-                modalTitle,
-                openModalWithTitle,
-                closeModal
-            }}
-        >
-            {children}
-        </ModalContext.Provider>
-    );
- }
+  const closeModal = () => {
+    Cookies.set("cookieConsent", "true", { expires: 365 }); 
+    setIsModalOpen(false);
+  };
+
+  return (
+    <ModalContext.Provider
+      value={{
+        isModalOpen,
+        openModal,
+        closeModal,
+      }}
+    >
+      {children}
+    </ModalContext.Provider>
+  );
+};

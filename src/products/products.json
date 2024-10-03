@@ -139,7 +139,7 @@
     "category": "iced"
   },
   {
-    "id": 11,
+    "id": 12,
     "image": "images/caramelmacchiato.jpg",
     "title": "Frappe",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
@@ -149,7 +149,7 @@
     "category": "frappe"
   },
   {
-    "id": 12,
+    "id": 13,
     "image": "images/caramelmacchiato.jpg",
     "title": "Cold brew tonic",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
@@ -159,7 +159,7 @@
     "category": "frappe"
   },
   {
-    "id": 13,
+    "id": 14,
     "image": "images/caramelmacchiato.jpg",
     "title": "Cold brew latte",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
@@ -169,7 +169,7 @@
     "category": "frappe"
   },
   {
-    "id": 14,
+    "id": 15,
     "image": "images/caramelmacchiato.jpg",
     "title": "Prana chai",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
@@ -179,7 +179,7 @@
     "category": "noncoffe"
   },
   {
-    "id": 15,
+    "id": 16,
     "image": "images/caramelmacchiato.jpg",
     "title": "Matcha Latte",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
@@ -189,7 +189,7 @@
     "category": "noncoffe"
   },
   {
-    "id": 16,
+    "id": 17,
     "image": "images/caramelmacchiato.jpg",
     "title": "Hot cocoa",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
@@ -199,7 +199,7 @@
     "category": "noncoffe"
   },
   {
-    "id": 17,
+    "id": 18,
     "image": "images/caramelmacchiato.jpg",
     "title": "Fruit iced tea",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
@@ -209,7 +209,7 @@
     "category": "icedtea"
   },
   {
-    "id": 18,
+    "id": 19,
     "image": "images/caramelmacchiato.jpg",
     "title": "Mint iced tea",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
@@ -219,7 +219,7 @@
     "category": "icedtea"
   },
   {
-    "id": 19,
+    "id": 20,
     "image": "images/caramelmacchiato.jpg",
     "title": "Gingershot",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
@@ -229,7 +229,7 @@
     "category": "gingershot"
   },
   {
-    "id": 20,
+    "id": 21,
     "image": "images/caramelmacchiato.jpg",
     "title": "Coca Cola",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
@@ -239,7 +239,7 @@
     "category": "beverages"
   },
   {
-    "id": 21,
+    "id": 22,
     "image": "images/caramelmacchiato.jpg",
     "title": "Sprite",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
@@ -249,7 +249,7 @@
     "category": "beverages"
   },
   {
-    "id": 22,
+    "id": 23,
     "image": "images/caramelmacchiato.jpg",
     "title": "Fanta",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",

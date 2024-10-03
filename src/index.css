@@ -56,6 +56,40 @@ body {
   font-family: "MainFont", sans-serif;
 }
 
+.btn-primary {
+  background-color: var(--dark-color);
+  border: 1px solid transparent;
+}
+
+#Dark .btn-primary {
+  background-color: var(--white-color);
+  border: 1px solid transparent;
+}
+
+.btn-primary:hover {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+  border: 1px solid var(--dark-color);
+}
+
+.dark-modal-content .btn-primary {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+  border: 1px solid transparent;
+}
+
+.dark-modal-content .btn-primary:hover {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+}
+
+#Dark .btn-primary:hover {
+  background-color: var(--dark-color);
+  color: var(--dark-color);
+  border: 1px solid var(--white-color);
+}
+
 .main-header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -279,7 +313,6 @@ body {
 }
 
 #Dark .category-image {
-  background: var(--dark-color);
   box-shadow: 0px 10px 40px rgba(255, 255, 255, 0.1);
 }
 
@@ -452,6 +485,12 @@ body {
   color: #fff;
 }
 
+.images-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .store-only {
   border: 1px solid var(--dark-color);
   width: 97.8%;
@@ -476,6 +515,28 @@ body {
 
 #Light .schedule {
   color: var(--dark-color);
+}
+.modal-header button {
+  background: none;
+  border: none;
+  font-size: 27px;
+}
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  max-width: 900px;
+}
+
+
+.dark-modal-content {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  box-shadow: 0px 10px 40px rgba(255, 255, 255, 0.1);
+}
+
+.dark-modal-content .close {
+  color: var(--white-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -514,11 +575,16 @@ body {
   }
   .card {
     margin: 0 auto;
+    width: 20rem;
   }
 
   .logo-footer {
     display: block;
     margin: 0 auto 20px auto;
+  }
+
+  .product-row h4 {
+    text-align: center;
   }
 
   .navigation-footer ul {
@@ -529,6 +595,9 @@ body {
     text-align: center;
   }
 
+  #Dark .category-image {
+    box-shadow: none;
+  }
   .navigation-footer ul li {
     margin-bottom: 10px;
     text-align: center;
@@ -537,30 +606,21 @@ body {
   .social-media {
     text-align: center;
   }
-}
 
-.arrow-button {
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  cursor: pointer;
-  font-size: 24px;
-  padding: 5px 10px;
-  margin: 10px;
-  z-index: 1;
-}
+  .main-about {
+    text-align: center;
+  }
+  .images-content img {
+    margin: 0 auto;
+  }
 
-.left-arrow {
-  position: absolute;
-  left: -40px;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  .visit-us {
+    text-align: center;
+  }
 
-.right-arrow {
-  position: absolute;
-  right: -40px;
-  top: 50%;
-  transform: translateY(-50%);
+  .schedule {
+    padding: 0 25px;
+  }
 }
 
 .scroll-item {
