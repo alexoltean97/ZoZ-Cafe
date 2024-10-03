@@ -1,7 +1,9 @@
 const Terms = () => {
-    return(
-        <p>Terms</p>
-    );
-}
+  return (
+    <div className="container">
+      <p>Terms</p>
+    </div>
+  );
+};
 
 export default Terms;
