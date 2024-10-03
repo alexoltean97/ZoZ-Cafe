@@ -6,6 +6,7 @@ import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Terms from "./pages/Terms/Terms";
 import Privacy from "./pages/Privacy/Privacy";
+import Product from "./pages/Product/Product";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Modal from "./components/Modal/Modal";
@@ -29,6 +30,7 @@ const AppContent = () => {
           <Contact path="/contact" />
           <Privacy path="/privacy" />
           <Terms path="/terms" />
+          <Product path="/product/:id" />
         </Router>
       </main>
       <Footer />
