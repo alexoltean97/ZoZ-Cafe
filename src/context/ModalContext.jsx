@@ -1,4 +1,3 @@
-// context/ModalContext.js
 import { createContext } from "preact";
 import { useState, useContext, useEffect } from "preact/hooks";
 import Cookies from "js-cookie";
