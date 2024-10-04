@@ -1,7 +1,6 @@
 import { createPortal } from "preact/compat";
 import { useTheme } from "../../context/ThemeContext";
 import { useEffect } from "preact/hooks";
-import ModalHeader from "../ModalHeader/ModalHeader";
 import ModalFooter from "../ModalFooter/ModalFooter";
 const Modal = ({ isOpen, onClose, children }) => {
   const modalRoot = document.getElementById("modal-root");
@@ -37,7 +36,6 @@ const Modal = ({ isOpen, onClose, children }) => {
               currentTheme === "Dark" ? "dark-modal-content" : ""
             }`}
           >
-            <ModalHeader close={onClose} />
             <div className="modal-body">{children}</div>
             <ModalFooter close={onClose} />
           </div>

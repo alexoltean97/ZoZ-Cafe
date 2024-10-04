@@ -1,7 +1,9 @@
 const Privacy = () => {
-    return(
-        <p>Privacy</p>
-    );
-}
+  return (
+    <div className="container">
+      <p>Privacy</p>
+    </div>
+  );
+};
 
 export default Privacy;

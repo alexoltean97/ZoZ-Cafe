@@ -1,5 +1,5 @@
 import Cookies from "js-cookie";
-
+import { Link } from "preact-router";
 const ModalFooter = ({ close }) => {
   const handleConsent = () => {
     Cookies.set("cookieConsent", "true", { expires: 365 });
@@ -15,6 +15,8 @@ const ModalFooter = ({ close }) => {
       >
         I Understand
       </button>
+
+      <Link href="/cookies" onClick={close}>Setari cookie</Link>
     </div>
   );
 };
