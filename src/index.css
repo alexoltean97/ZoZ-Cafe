@@ -1,18 +1,17 @@
 @font-face {
   font-family: "MainFont";
-  src: url("./assets/fonts/Rhizome-RegularTrial.otf") format("otf"),
-    url("./assets/fonts/Rhizome-RegularTrial.otf") format("otf");
+  src: url("./assets/fonts/Rhizome-RegularTrial.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "MyCustomFont2";
-  src: url("./assets/fonts/gillsansnova_book.ttf") format("ttf"),
-    url("./assets/fonts/gillsansnova_book..ttf") format("ttf");
+  src: url("./assets/fonts/gillsansnova_book.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
 .page-container {
   display: flex;
   flex-direction: column;
@@ -53,7 +52,7 @@ body {
   margin: 0 0 0 0;
   height: 100%;
   width: 100%;
-  font-family: "MainFont", sans-serif;
+  font-family: "MainFont", 'sans-serif';
 }
 
 .btn-primary {
@@ -76,6 +75,7 @@ body {
   background-color: var(--white-color);
   color: var(--dark-color);
   border: 1px solid transparent;
+  border-radius: 20px;
 }
 
 .dark-modal-content .btn-primary:hover {
@@ -516,6 +516,18 @@ body {
 #Light .schedule {
   color: var(--dark-color);
 }
+.modal{
+  position: fixed;
+  /* top: 0; */
+  /* left: 0; */
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000080;
+  z-index: 1050;
+}
 .modal-header button {
   background: none;
   border: none;
@@ -544,6 +556,27 @@ body {
 .modal-footer{
   border: none;
 }
+
+.modal-footer{
+  display: initial;
+}
+
+.dark-modal-content .cookie-settings a{
+  color: var(--white-color);
+}
+
+.cookie-settings a {
+  color: var(--dark-color);
+}
+
+#Dark .legal-cookies a{
+  color: var(--white-color);
+}
+
+#Light .legal-cookies a{
+  color: var(--dark-color);
+}
+
 
 @media screen and (min-width: 768px) {
   .intro-content {
@@ -668,6 +701,15 @@ body {
   }
 
   .suggested-products h4 {
+    text-align: center;
+  }
+
+  .legal h4{
+    text-align: center;
+  }
+
+  .legal div{
+    font-size: 14px;
     text-align: center;
   }
 }

@@ -4,13 +4,16 @@ const LegalList = ({ openModal }) => {
     <div className="legal-list mb-3 mb-md-0">
       <ul className="list-unstyled d-flex flex-column flex-md-row justify-content-center m-0">
         <li className="mx-md-2 mb-2 mb-md-0">
-          <a
+          {/* <a
             className="pb-2 main-nav_link"
             href="#"
             onClick={() => openModal()}
           >
             Cookie Settings
-          </a>
+          </a> */}
+          <Link className="pb-2 main-nav_link" href="/cookies">
+           Cookie Policy
+          </Link>
         </li>
 
         <li className="mx-md-2 mb-2 mb-md-0">

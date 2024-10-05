@@ -8,15 +8,20 @@ const ModalFooter = ({ close }) => {
 
   return (
     <div className="modal-footer">
-      <button
-        type="button"
-        className="btn btn-primary w-100"
-        onClick={handleConsent}
-      >
-        I Understand
-      </button>
-
-      <Link href="/cookies" onClick={close}>Setari cookie</Link>
+      <div>
+        <button
+          type="button"
+          className="btn btn-primary w-50 d-block mx-auto font-weight-bold"
+          onClick={handleConsent}
+        >
+          I Understand
+        </button>
+      </div>
+      <div className="cookie-settings text-center mt-3 font-weight-bold">
+        <Link href="/cookies" onClick={close}>
+          Setari cookie
+        </Link>
+      </div>
     </div>
   );
 };
