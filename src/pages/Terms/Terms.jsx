@@ -2,7 +2,7 @@ const Terms = () => {
   return (
     <div className="container">
       <div className="legal">
-        <div className="py-4">
+        <div className="py-4 legal-title">
           <h3>Cadru Legal</h3>
         </div>
 

@@ -14,7 +14,7 @@ const CookieSettings = () => {
       ...prevCookies,
       [name]: checked,
     }));
-    d;
+    // console.log(`Cookie ${name} is now ${checked ? "enabled" : "disabled"}`);
   };
 
   return (

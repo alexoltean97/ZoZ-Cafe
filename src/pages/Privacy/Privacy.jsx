@@ -2,7 +2,7 @@ const Privacy = () => {
   return (
     <div className="container">
       <div className="py-4">
-        <h3>Cadru Legal</h3>
+        <h3 className="legal-title">Cadru Legal</h3>
       </div>
 
       <div className="pb-2">

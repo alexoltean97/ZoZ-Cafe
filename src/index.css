@@ -5,13 +5,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "MyCustomFont2";
-  src: url("./assets/fonts/gillsansnova_book.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 .page-container {
   display: flex;
   flex-direction: column;
@@ -52,7 +45,7 @@ body {
   margin: 0 0 0 0;
   height: 100%;
   width: 100%;
-  font-family: "MainFont", 'sans-serif';
+  font-family: "MainFont", "sans-serif";
 }
 
 .btn-primary {
@@ -516,7 +509,7 @@ body {
 #Light .schedule {
   color: var(--dark-color);
 }
-.modal{
+.modal {
   position: fixed;
   /* top: 0; */
   /* left: 0; */
@@ -539,7 +532,7 @@ body {
   width: auto;
   max-width: 600px;
 }
-.modal-body{
+.modal-body {
   text-align: center;
 }
 
@@ -553,15 +546,15 @@ body {
   color: var(--white-color);
 }
 
-.modal-footer{
+.modal-footer {
   border: none;
 }
 
-.modal-footer{
+.modal-footer {
   display: initial;
 }
 
-.dark-modal-content .cookie-settings a{
+.dark-modal-content .cookie-settings a {
   color: var(--white-color);
 }
 
@@ -569,11 +562,11 @@ body {
   color: var(--dark-color);
 }
 
-#Dark .legal-cookies a{
+#Dark .legal-cookies a {
   color: var(--white-color);
 }
 
-#Light .legal-cookies a{
+#Light .legal-cookies a {
   color: var(--dark-color);
 }
 .cookie-form {
@@ -644,6 +637,33 @@ input:checked + .slider:before {
   color: var(--dark-color);
 }
 
+#Light .not-found svg {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(252deg)
+    brightness(108%) contrast(105%);
+}
+
+#Dark .not-found svg {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(252deg)
+    brightness(108%) contrast(105%);
+}
+#Dark .not-found {
+  color: var(--white-color);
+}
+
+#Dark .not-found h2 {
+  color: var(--white-color);
+}
+
+#Dark .not-found a {
+  color: var(--dark-color);
+}
+
+#Dark .not-found a:hover {
+  color: var(--white-color);
+}
+.not-found {
+  height: 100vh; 
+}
 
 @media screen and (min-width: 768px) {
   .intro-content {
@@ -771,13 +791,18 @@ input:checked + .slider:before {
     text-align: center;
   }
 
-  .legal h4{
+  .legal h4 {
     text-align: center;
   }
 
-  .legal div{
+  .legal div {
     font-size: 14px;
     text-align: center;
+  }
+  .not-found {
+    height: 60vh; 
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 
@@ -829,8 +854,6 @@ input:checked + .slider:before {
 .tab-pane {
   transition: opacity 0.3s ease-in-out;
 }
-
-/* Product Tabs Custom Styles */
 
 .custom-nav-tabs {
   margin-bottom: 20px;
