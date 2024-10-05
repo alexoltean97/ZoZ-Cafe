@@ -1,4 +1,5 @@
 import { useEffect, useState } from "preact/hooks";
+import { useTranslation } from "preact-i18next";
 import products from "../../products/products.json";
 import ProductImage from "../../components/ProductImage/ProductImage";
 import ProductTabs from "../../components/ProductTabs/ProductTabs";
@@ -6,6 +7,7 @@ import ProductTabContent from "../../components/ProductTabContent/ProductTabCont
 import SuggestedProducts from "../../components/SuggestedProducts/SuggestedProducts"; 
 
 const Product = () => {
+  const { t } = useTranslation();
   const [product, setProduct] = useState(null);
   const [category, setCategory] = useState("");
   const [activeTab, setActiveTab] = useState("description");
@@ -21,7 +23,7 @@ const Product = () => {
   }, [id]);
 
   if (!product) {
-    return <div className="product-not-found">Product not found</div>;
+    return <div className="product-not-found">{t("missingProduct")}</div>;
   }
 
   const suggestedProducts = products
@@ -33,7 +35,7 @@ const Product = () => {
       <div className="container my-4">
         <div className="product-title">
           <h2 className="mb-3">{product.title}</h2>
-          <h5 className="mb-4">Produs disponibil doar in cafenea</h5>
+          <h5 className="mb-4">{t("availableProduct")}</h5>
         </div>
 
         <div className="row">

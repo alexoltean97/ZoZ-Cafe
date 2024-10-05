@@ -1,4 +1,4 @@
-import placeholder from "../../assets/images/res250.webp";
+import placeholder from "../../assets/images/unsplash7.jpg";
 
 const ProductImage = () => {
   return (

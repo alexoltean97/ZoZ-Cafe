@@ -1,6 +1,6 @@
 import { useTranslation } from "preact-i18next";
 import { Link } from "preact-router";
-import placeholder from "../../assets/images/res250.webp";
+import placeholder from "../../assets/images/unsplash7.jpg";
 import products from "../../products/products.json";
 const Products = ({ activeCategory }) => {
   const { t } = useTranslation();
@@ -12,9 +12,9 @@ const Products = ({ activeCategory }) => {
   return (
     <div className="products my-4">
       <div className="container">
-        <h3 className="mb-4">Products</h3>
+        <h3 className="mb-4">{t("product")}</h3>
         <div className="row product-row">
-          <h4 className="mb-3">Produsele sunt disponsibile doar in magazin!</h4>
+          <h4 className="mb-3">{t("productNotice")}</h4>
 
           {filteredProducts.map((product) => (
             <div

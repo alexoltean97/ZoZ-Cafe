@@ -1,5 +1,5 @@
 import { Link } from "preact-router";
-
+import { useTranslation } from "preact-i18next";
 const scrollToContent = () => {
   setTimeout(() => {
     const mainContent = document.querySelector(".legal-title");
@@ -12,6 +12,7 @@ const scrollToContent = () => {
 };
 
 const LegalList = () => {
+  const { t } = useTranslation();
   return (
     <div className="legal-list mb-3 mb-md-0">
       <ul className="list-unstyled d-flex flex-column flex-md-row justify-content-center m-0">
@@ -21,7 +22,7 @@ const LegalList = () => {
             href="/cookiespolicy"
             onClick={scrollToContent}
           >
-            Cookie Policy
+            {t("cookie_settings")}
           </Link>
         </li>
 
@@ -31,7 +32,7 @@ const LegalList = () => {
             href="/privacy"
             onClick={scrollToContent}
           >
-            Privacy Policy
+               {t("privacy_policy")}
           </Link>
         </li>
 
@@ -41,7 +42,7 @@ const LegalList = () => {
             href="/terms"
             onClick={scrollToContent}
           >
-            Terms and Conditions
+            {t("terms_condition")}
           </Link>
         </li>
       </ul>

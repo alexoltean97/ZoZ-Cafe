@@ -28,7 +28,7 @@
     "ingredients": "Ground coffe 8 gr, hot water",
     "weight": "80 ml",
     "price": 3.50,
-    "category": "coffe"
+    "category": "Coffe"
   },
   {
     "id": "4",
@@ -176,7 +176,7 @@
     "ingredients": "Prana chai, Oatmilk",
     "weight": "180 ml",
     "price": 4.25,
-    "category": "noncoffe"
+    "category": "hot"
   },
   {
     "id": "16",
@@ -186,7 +186,7 @@
     "ingredients": "Powder tea matcha, oat milk cream",
     "weight": "180 ml",
     "price": "4.25",
-    "category": "noncoffe"
+    "category": "hot"
   },
   {
     "id": "17",
@@ -196,7 +196,7 @@
     "ingredients": "Powder Chocholate, CreamMilk",
     "weight": "200 ml",
     "price": 4.25,
-    "category": "noncoffe"
+    "category": "hot"
   },
   {
     "id": "18",
