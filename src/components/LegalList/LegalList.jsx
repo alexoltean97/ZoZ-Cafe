@@ -11,7 +11,7 @@ const LegalList = ({ openModal }) => {
           >
             Cookie Settings
           </a> */}
-          <Link className="pb-2 main-nav_link" href="/cookies">
+          <Link className="pb-2 main-nav_link" href="/cookiespolicy">
            Cookie Policy
           </Link>
         </li>

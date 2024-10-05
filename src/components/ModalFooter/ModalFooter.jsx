@@ -18,7 +18,7 @@ const ModalFooter = ({ close }) => {
         </button>
       </div>
       <div className="cookie-settings text-center mt-3 font-weight-bold">
-        <Link href="/cookies" onClick={close}>
+        <Link href="/cookiessetting" onClick={close}>
           Setari cookie
         </Link>
       </div>

@@ -8,6 +8,7 @@ import Terms from "./pages/Terms/Terms";
 import Privacy from "./pages/Privacy/Privacy";
 import Product from "./pages/Product/Product";
 import NotFound from "./pages/NotFound/NotFound";
+import CookiePolicy from "./pages/CookiePolicy/CookiePolicy";
 import CookieSettings from "./pages/CookieSettings/CookieSettings";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -33,7 +34,8 @@ const AppContent = () => {
           <Privacy path="/privacy" />
           <Terms path="/terms" />
           <Product path="/product/:id" />
-          <CookieSettings path="/cookies" />
+          <CookiePolicy path="/cookiespolicy" />
+          <CookieSettings path="/cookiessetting" />
           <NotFound default />
         </Router>
       </main>
