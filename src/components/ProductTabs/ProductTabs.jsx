@@ -1,4 +1,8 @@
+import { useTranslation } from "preact-i18next";
+
 const ProductTabs = ({ activeTab, setActiveTab }) => {
+  const { t } = useTranslation();
+
   return (
     <ul className="nav nav-tabs custom-nav-tabs" id="myTab" role="tablist">
       <li className="nav-item" role="presentation">
@@ -8,7 +12,7 @@ const ProductTabs = ({ activeTab, setActiveTab }) => {
           role="tab"
           onClick={() => setActiveTab("description")}
         >
-          Description
+          {t("description")}
         </button>
       </li>
       <li className="nav-item" role="presentation">
@@ -18,7 +22,7 @@ const ProductTabs = ({ activeTab, setActiveTab }) => {
           role="tab"
           onClick={() => setActiveTab("ingredients")}
         >
-          Ingredients
+          {t("ingredients")}
         </button>
       </li>
       <li className="nav-item" role="presentation">
@@ -28,7 +32,7 @@ const ProductTabs = ({ activeTab, setActiveTab }) => {
           role="tab"
           onClick={() => setActiveTab("extras")}
         >
-          Extras
+          {t("extras")}
         </button>
       </li>
       <li className="nav-item" role="presentation">
@@ -38,7 +42,7 @@ const ProductTabs = ({ activeTab, setActiveTab }) => {
           role="tab"
           onClick={() => setActiveTab("alergens")}
         >
-          Alergens
+          {t("alergens")}
         </button>
       </li>
     </ul>

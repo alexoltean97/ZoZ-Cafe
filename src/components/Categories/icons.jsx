@@ -112,7 +112,7 @@ export const svgIcons = {
     </svg>
   ),
 
-  noncoffe: (
+  hot: (
     <svg
       fill="#000000"
       height="800px"

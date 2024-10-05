@@ -1,45 +1,19 @@
+import { useTranslation } from "preact-i18next";
+import placeholder from "../../assets/images/unsplash2.jpg";
 const About = () => {
+  const { t } = useTranslation();
   return (
     <div className="main-about mt-4">
       <div className="container">
-        <h2 className="mb-4">Despre noi</h2>
+        <h2 className="mb-4">{t("about")}</h2>
         <div className="row">
           <div className="col-lg-9">
-            <div className="content mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              eu risus non turpis vestibulum ullamcorper. Suspendisse ut quam
-              eleifend, feugiat nunc sit amet, dictum magna. Nulla malesuada non
-              purus vel elementum.
-            </div>
-            <div className="content mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              eu risus non turpis vestibulum ullamcorper. Suspendisse ut quam
-              eleifend, feugiat nunc sit amet, dictum magna. Nulla malesuada non
-              purus vel elementum.
-            </div>
-            <div className="content mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              eu risus non turpis vestibulum ullamcorper. Suspendisse ut quam
-              eleifend, feugiat nunc sit amet, dictum magna. Nulla malesuada non
-              purus vel elementum.
-            </div>
-            <div className="content mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              eu risus non turpis vestibulum ullamcorper. Suspendisse ut quam
-              eleifend, feugiat nunc sit amet, dictum magna. Nulla malesuada non
-              purus vel elementum.
-            </div>
-            <div className="content mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              eu risus non turpis vestibulum ullamcorper. Suspendisse ut quam
-              eleifend, feugiat nunc sit amet, dictum magna. Nulla malesuada non
-              purus vel elementum.
-            </div>
+            <div className="content mb-4">{t("aboutDesc")}</div>
           </div>
 
           <div class="col-lg-3">
             <div className="images-content">
-              <img src="https://placehold.co/400"></img>
+              <img src={placeholder}></img>
             </div>
           </div>
         </div>

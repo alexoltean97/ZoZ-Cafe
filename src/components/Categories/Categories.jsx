@@ -1,17 +1,20 @@
 import { ScrollMenu } from "react-horizontal-scrolling-menu";
 import { useEffect, useState } from "preact/hooks";
+import { useTranslation } from "preact-i18next";
 import { svgIcons } from "./icons.jsx";
 
 const Categories = ({ activeCategory, setActiveCategory }) => {
+  const { t } = useTranslation();
   const [isScrollable, setIsScrollable] = useState(false);
+
   const categories = [
-    "coffe",
-    "iced",
-    "frappe",
-    "noncoffe",
-    "icedtea",
-    "gingershot",
-    "beverages",
+    { category: "coffe", name: t("coffe") },
+    { category: "iced", name: t("iced") },
+    { category: "frappe", name: "Frappe" },
+    { category: "hot", name: t("hot") },
+    { category: "icedtea", name: t("icedTea") },
+    { category: "gingershot", name: t("shot") },
+    { category: "beverages", name: t("beverages") },
   ];
 
   useEffect(() => {
@@ -30,10 +33,10 @@ const Categories = ({ activeCategory, setActiveCategory }) => {
   return (
     <div className="categories my-4">
       <div className="container">
-        <h3 className="mb-4">Categorii</h3>
+        <h3 className="mb-4">{t("categories")}</h3>
         {isScrollable ? (
           <ScrollMenu>
-            {categories.map((category, index) => (
+            {categories.map(({ category, name }, index) => (
               <div
                 className={`category-box ${index > 0 ? "mx-2" : ""}`}
                 key={category}
@@ -48,14 +51,14 @@ const Categories = ({ activeCategory, setActiveCategory }) => {
                   {svgIcons[category]}
                 </div>
                 <div className="category-label text-center mt-2">
-                  <span>{category}</span>
+                  <span>{name}</span>
                 </div>
               </div>
             ))}
           </ScrollMenu>
         ) : (
           <div className="categories-row d-flex">
-            {categories.map((category, index) => (
+            {categories.map(({ category, name }, index) => (
               <div
                 className={`category-box ${index > 0 ? "mx-2" : ""}`}
                 key={category}
@@ -69,7 +72,7 @@ const Categories = ({ activeCategory, setActiveCategory }) => {
                   {svgIcons[category]}
                 </div>
                 <div className="category-label text-center mt-2">
-                  <span>{category}</span>
+                  <span>{name}</span>
                 </div>
               </div>
             ))}
