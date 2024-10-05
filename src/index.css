@@ -1,18 +1,10 @@
 @font-face {
   font-family: "MainFont";
-  src: url("./assets/fonts/Rhizome-RegularTrial.otf") format("otf"),
-    url("./assets/fonts/Rhizome-RegularTrial.otf") format("otf");
+  src: url("./assets/fonts/Rhizome-RegularTrial.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-  font-family: "MyCustomFont2";
-  src: url("./assets/fonts/gillsansnova_book.ttf") format("ttf"),
-    url("./assets/fonts/gillsansnova_book..ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
 .page-container {
   display: flex;
   flex-direction: column;
@@ -53,7 +45,7 @@ body {
   margin: 0 0 0 0;
   height: 100%;
   width: 100%;
-  font-family: "MainFont", sans-serif;
+  font-family: "MainFont", "sans-serif";
 }
 
 .btn-primary {
@@ -76,6 +68,7 @@ body {
   background-color: var(--white-color);
   color: var(--dark-color);
   border: 1px solid transparent;
+  border-radius: 20px;
 }
 
 .dark-modal-content .btn-primary:hover {
@@ -516,6 +509,18 @@ body {
 #Light .schedule {
   color: var(--dark-color);
 }
+.modal {
+  position: fixed;
+  /* top: 0; */
+  /* left: 0; */
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000080;
+  z-index: 1050;
+}
 .modal-header button {
   background: none;
   border: none;
@@ -527,7 +532,7 @@ body {
   width: auto;
   max-width: 600px;
 }
-.modal-body{
+.modal-body {
   text-align: center;
 }
 
@@ -541,8 +546,123 @@ body {
   color: var(--white-color);
 }
 
-.modal-footer{
+.modal-footer {
   border: none;
+}
+
+.modal-footer {
+  display: initial;
+}
+
+.dark-modal-content .cookie-settings a {
+  color: var(--white-color);
+}
+
+.cookie-settings a {
+  color: var(--dark-color);
+}
+
+#Dark .legal-cookies a {
+  color: var(--white-color);
+}
+
+#Light .legal-cookies a {
+  color: var(--dark-color);
+}
+.cookie-form {
+  margin-top: 20px;
+}
+
+.cookie-group {
+  margin-bottom: 20px;
+}
+
+.cookie-group .label-text {
+  margin-left: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 25px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+#Dark .cookie-group .label-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white-color);
+}
+
+#Light .cookie-group .label-text {
+  color: var(--dark-color);
+}
+
+#Light .not-found svg {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(252deg)
+    brightness(108%) contrast(105%);
+}
+
+#Dark .not-found svg {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(252deg)
+    brightness(108%) contrast(105%);
+}
+#Dark .not-found {
+  color: var(--white-color);
+}
+
+#Dark .not-found h2 {
+  color: var(--white-color);
+}
+
+#Dark .not-found a {
+  color: var(--dark-color);
+}
+
+#Dark .not-found a:hover {
+  color: var(--white-color);
+}
+.not-found {
+  height: 100vh; 
 }
 
 @media screen and (min-width: 768px) {
@@ -670,6 +790,20 @@ body {
   .suggested-products h4 {
     text-align: center;
   }
+
+  .legal h4 {
+    text-align: center;
+  }
+
+  .legal div {
+    font-size: 14px;
+    text-align: center;
+  }
+  .not-found {
+    height: 60vh; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .scroll-item {
@@ -720,8 +854,6 @@ body {
 .tab-pane {
   transition: opacity 0.3s ease-in-out;
 }
-
-/* Product Tabs Custom Styles */
 
 .custom-nav-tabs {
   margin-bottom: 20px;

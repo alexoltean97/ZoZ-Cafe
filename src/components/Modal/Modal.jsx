@@ -5,7 +5,6 @@ import ModalFooter from "../ModalFooter/ModalFooter";
 const Modal = ({ isOpen, onClose, children }) => {
   const modalRoot = document.getElementById("modal-root");
   const { currentTheme } = useTheme();
-  console.log(currentTheme);
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";

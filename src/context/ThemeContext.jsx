@@ -8,7 +8,7 @@ export const useTheme = () => useContext(ThemeContext);
 
 export const ThemeProvider = ({ children }) => {
   const [currentTheme, setCurrentTheme] = useState(
-    Cookies.get("theme") || "Light"
+    Cookies.get("theme") || "Dark"
   );
 
   useEffect(() => {
