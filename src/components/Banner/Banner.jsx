@@ -1,5 +1,4 @@
-import unsplash5 from "../../assets/unsplash/unsplash5.jpg";
-import backgroud from "../../assets/images/background.jpg";
+import backgroud from "../../assets/images/unsplash9.jpg";
 const Banner = () => {
   return (
     <div className="intro">
