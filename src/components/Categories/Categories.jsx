@@ -12,9 +12,13 @@ const Categories = ({ activeCategory, setActiveCategory }) => {
     { category: "iced", name: t("iced") },
     { category: "frappe", name: "Frappe" },
     { category: "hot", name: t("hot") },
+    { category: "tea", name: t("tea")},
     { category: "icedtea", name: t("icedTea") },
     { category: "gingershot", name: t("shot") },
     { category: "beverages", name: t("beverages") },
+    { category: "spritzers", name: "Spritzers" },
+    { category: "tonic", name: "Gin & tonic" },
+    
   ];
 
   useEffect(() => {

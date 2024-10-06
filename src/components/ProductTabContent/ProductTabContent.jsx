@@ -1,14 +1,18 @@
+import { useTranslation } from "preact-i18next";
+
 const ProductTabContent = ({ activeTab, product }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="tab-content mt-4">
       {activeTab === "description" && (
         <div className="tab-pane active" id="description">
-          <p>{product.description}</p>
+          <p>{ t(product.weight)}</p>
         </div>
       )}
       {activeTab === "ingredients" && (
         <div className="tab-pane active" id="ingredients">
-          <p>{product.ingredients}</p>
+          <p>{t(product.ingredients)}</p>
         </div>
       )}
       {activeTab === "extras" && (
@@ -16,7 +20,7 @@ const ProductTabContent = ({ activeTab, product }) => {
           {!product.extrashot &&
           !product.extraMilkOat &&
           !product.extraMilkPeas ? (
-            <div>No extras are available for this product</div>
+            <div>{t("noExtras")}</div>
           ) : (
             <>
               {product.extrashot && (
@@ -27,15 +31,15 @@ const ProductTabContent = ({ activeTab, product }) => {
               )}
               {product.extraMilkOat && (
                 <div className="extra-item">
-                  <strong>{product.extraMilkOat.name}</strong> -{" "}
-                  {product.extraMilkOat.description} (
+                  <strong>{t(product.extraMilkOat.name)}</strong> -{" "}
+                  {t(product.extraMilkOat.description)} (
                   {product.extraMilkOat.weight})
                 </div>
               )}
               {product.extraMilkPeas && (
                 <div className="extra-item">
-                  <strong>{product.extraMilkPeas.name}</strong> -{" "}
-                  {product.extraMilkPeas.description} (
+                  <strong>{t(product.extraMilkPeas.name)}</strong> -{" "}
+                  {t(product.extraMilkPeas.description)} (
                   {product.extraMilkPeas.weight})
                 </div>
               )}
@@ -48,7 +52,7 @@ const ProductTabContent = ({ activeTab, product }) => {
           {product.alergens && product.alergens.length > 0 ? (
             <p>{product.alergens}</p>
           ) : (
-            <p>No allergens specified.</p>
+            <p>{t("noAlergens")}</p>
           )}
         </div>
       )}

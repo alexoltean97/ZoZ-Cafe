@@ -34,13 +34,11 @@ const Products = ({ activeCategory }) => {
 
                   <div className="card-body d-flex flex-column">
                     <h5 className="card-title font-weight-bold">
-                      {product.title}
+                      {t(product.title)}
                     </h5>
-                    <p className="card-text flex-grow-1">
-                      {t(product.description)}
-                    </p>
+                    <p className="card-text flex-grow-1">{t(product.weight)}</p>
                     <span className="price font-weight-bold">
-                      {product.price} lei /buc
+                      {product.price} lei / {t("buc")}
                     </span>
                   </div>
                 </div>

@@ -34,7 +34,7 @@ const Product = () => {
     <>
       <div className="container my-4">
         <div className="product-title">
-          <h2 className="mb-3">{product.title}</h2>
+          <h2 className="mb-3">{t(product.title)}</h2>
           <h5 className="mb-4">{t("availableProduct")}</h5>
         </div>
 

@@ -9,13 +9,12 @@
     "price": 2.50,
     "category": "coffe"
   },
-
   {
     "id": "2",
     "image": "images/latte.jpg",
     "title": "Double Espresso",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "Ground coffe 18 gr, hot water",
+    "ingredients": "ingredientsDoubleEspresso",
     "weight": "35 ml",
     "price": 3.75,
     "category": "coffe"
@@ -25,7 +24,7 @@
     "image": "images/cappuccino.jpg",
     "title": "Americano",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "Ground coffe 8 gr, hot water",
+    "ingredients": "ingredientsAmericano",
     "weight": "80 ml",
     "price": 3.50,
     "category": "Coffe"
@@ -35,7 +34,7 @@
     "image": "images/americano.jpg",
     "title": "Long Black",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "Ground coffe 18 gr, hot water",
+    "ingredients": "ingredientsLongBlack",
     "weight": "100 ml",
     "price": 2.75,
     "category": "coffe"
@@ -45,7 +44,7 @@
     "image": "images/mocha.jpg",
     "title": "Espresso Machiatto",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "Espresso, Milk Cream",
+    "ingredients": "ingredientsEspressoMachiato",
     "weight": "50 ml",
     "price": 4.00,
     "category": "coffe"
@@ -55,7 +54,7 @@
     "image": "images/flatwhite.jpg",
     "title": "Cortado",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "Double Espresso, Milk Cream",
+    "ingredients": "ingredientsCortado",
     "weight": "70 ml",
     "price": 3.85,
     "category": "coffe"
@@ -65,7 +64,7 @@
     "image": "images/icedcoffee.jpg",
     "title": "Babyccino",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "MilkCream, Honey, Cinnamon",
+    "ingredients": "ingredientsBabycino",
     "weight": "180 ml",
     "price": 3.00,
     "category": "coffe"
@@ -75,7 +74,7 @@
     "image": "images/coldbrew.jpg",
     "title": "Cappuccino",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "Espresso, Cream Milk",
+    "ingredients": "ingredientsCappucino",
     "weight": "180 ml",
     "price": 3.25,
     "category": "coffe"
@@ -85,7 +84,7 @@
     "image": "images/caramelmacchiato.jpg",
     "title": "Flat white",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "Espresso Double, Cream Milk",
+    "ingredients": "ingredientsFlatWhite",
     "weight": "180 ml",
     "price": 4.25,
     "category": "coffe"
@@ -95,8 +94,8 @@
     "image": "images/affogato.jpg",
     "title": "Latte",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "Espresso Single",
-    "weight": "20 ml",
+    "ingredients": "ingredientsLate",
+    "weight": "300 ml",
     "price": 4.50,
     "category": "coffe",
     "extrashot": {
@@ -106,34 +105,24 @@
       "ingredients": "espresso Single"
     },
     "extraMilkOat": {
-      "name": "+ Oat Milk ",
+      "name": "oatMilk",
       "weight": "20ml",
-      "description": "Bautura vegetale din ovaz",
+      "description": "oatMilkDesc",
       "ingredients": "espresso Single"
     },
     "extraMilkPeas": {
-      "name": "+ Peas Milk ",
+      "name": "peasMilk",
       "weight": "20ml",
-      "description": "Bautura vegetale din mazare",
+      "description": "peasMilkDesc",
       "ingredients": "espresso Single"
     }
   },
   {
-    "id": "10",
+    "id": "11",
     "image": "images/caramelmacchiato.jpg",
     "title": "Shakerado",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "Espresso, Milk, Home Made Sirop Muscovado, Ice",
-    "weight": "300 ml",
-    "price": 4.25,
-    "category": "iced"
-  },
-  {
-    "id": "11",
-    "image": "images/caramelmacchiato.jpg",
-    "title": "Iced Latte",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "Espresso, Milk, Ice",
+    "ingredients": "shakeradoIngredients",
     "weight": "300 ml",
     "price": 4.25,
     "category": "iced"
@@ -141,19 +130,19 @@
   {
     "id": "12",
     "image": "images/caramelmacchiato.jpg",
-    "title": "Frappe",
+    "title": "Iced Latte",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "Espresso Double, Milk, Ice, whipped cream, Vanila IceCream, biscuits",
+    "ingredients": "icedIngredients",
     "weight": "300 ml",
     "price": 4.25,
-    "category": "frappe"
+    "category": "iced"
   },
   {
     "id": "13",
     "image": "images/caramelmacchiato.jpg",
-    "title": "Cold brew tonic",
+    "title": "Frappe",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "Cold brewed coffee for 16 hours, tonic water, ice",
+    "ingredients": "frapeIngredients",
     "weight": "300 ml",
     "price": 4.25,
     "category": "frappe"
@@ -161,9 +150,9 @@
   {
     "id": "14",
     "image": "images/caramelmacchiato.jpg",
-    "title": "Cold brew latte",
+    "title": "Cold brew tonic",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "Cold brewed coffee for 16 hours, water, ice",
+    "ingredients": "brewTonicIngredients",
     "weight": "300 ml",
     "price": 4.25,
     "category": "frappe"
@@ -171,49 +160,49 @@
   {
     "id": "15",
     "image": "images/caramelmacchiato.jpg",
-    "title": "Prana chai",
+    "title": "Cold brew latte",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "Prana chai, Oatmilk",
-    "weight": "180 ml",
+    "ingredients": "brewLatteIngredients",
+    "weight": "300 ml",
     "price": 4.25,
-    "category": "hot"
+    "category": "frappe"
   },
   {
     "id": "16",
     "image": "images/caramelmacchiato.jpg",
-    "title": "Matcha Latte",
+    "title": "Prana chai",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "Powder tea matcha, oat milk cream",
+    "ingredients": "pranaChaiIngredients",
     "weight": "180 ml",
-    "price": "4.25",
+    "price": 4.25,
     "category": "hot"
   },
   {
     "id": "17",
     "image": "images/caramelmacchiato.jpg",
-    "title": "Hot cocoa",
+    "title": "Matcha Latte",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "Powder Chocholate, CreamMilk",
-    "weight": "200 ml",
-    "price": 4.25,
+    "ingredients": "matchaLatteIngredients",
+    "weight": "180 ml",
+    "price": "4.25",
     "category": "hot"
   },
   {
     "id": "18",
     "image": "images/caramelmacchiato.jpg",
-    "title": "Fruit iced tea",
+    "title": "Hot cocoa",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "fruit infusion, sugar syrup, lemon, berries, ice",
-    "weight": "400 ml",
+    "ingredients": "hotCocoaIngredients",
+    "weight": "200 ml",
     "price": 4.25,
-    "category": "icedtea"
+    "category": "hot"
   },
   {
     "id": "19",
     "image": "images/caramelmacchiato.jpg",
-    "title": "Mint iced tea",
+    "title": "Fruit iced tea",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "mint infusion, lemon, sugar syrup, mint, ice",
+    "ingredients": "fruitIcedTeaIngredients",
     "weight": "400 ml",
     "price": 4.25,
     "category": "icedtea"
@@ -221,15 +210,25 @@
   {
     "id": "20",
     "image": "images/caramelmacchiato.jpg",
+    "title": "Mint iced tea",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "mintIcedTeaIngredients",
+    "weight": "400 ml",
+    "price": 4.25,
+    "category": "icedtea"
+  },
+  {
+    "id": "21",
+    "image": "images/caramelmacchiato.jpg",
     "title": "Gingershot",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "mint infusion, lemon, sugar syrup, mint, ice",
-    "weight": "400 ml",
+    "ingredients": "gingerIngredients",
+    "weight": "50 ml",
     "price": 4.25,
     "category": "gingershot"
   },
   {
-    "id": "21",
+    "id": "22",
     "image": "images/caramelmacchiato.jpg",
     "title": "Coca Cola",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
@@ -239,7 +238,7 @@
     "category": "beverages"
   },
   {
-    "id": "22",
+    "id": "23",
     "image": "images/caramelmacchiato.jpg",
     "title": "Sprite",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
@@ -249,7 +248,7 @@
     "category": "beverages"
   },
   {
-    "id": "23",
+    "id": "24",
     "image": "images/caramelmacchiato.jpg",
     "title": "Fanta",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
@@ -257,6 +256,125 @@
     "weight": "400 ml",
     "price": 4.25,
     "category": "beverages"
+  },
+  {
+    "id": "25",
+    "image": "images/caramelmacchiato.jpg",
+    "title": "kahoshimaTitle",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "kagoshimaIngredients",
+    "weight": "200 ml",
+    "price": 4.25,
+    "category": "tea"
+  },
+  {
+    "id": "26",
+    "image": "images/caramelmacchiato.jpg",
+    "title": "thaiAppleTitle",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "thaiIngredients",
+    "weight": "200 ml",
+    "price": 4.25,
+    "category": "tea"
+  },
+  {
+    "id": "27",
+    "image": "images/caramelmacchiato.jpg",
+    "title": "stormTitle",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "stormIngredients",
+    "weight": "200 ml",
+    "price": 4.25,
+    "category": "tea"
+  },
+  {
+    "id": "28",
+    "image": "images/caramelmacchiato.jpg",
+    "title": "peperMintTitle",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "mintIngredients",
+    "weight": "200 ml",
+    "price": 4.25,
+    "category": "tea"
+  },
+  {
+    "id": "29",
+    "image": "images/caramelmacchiato.jpg",
+    "title": "anhuiTitle",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "anhuiIngredients",
+    "weight": "200 ml",
+    "price": 4.25,
+    "category": "tea"
+  },
+  {
+    "id": "30",
+    "image": "images/caramelmacchiato.jpg",
+    "title": "roibosTitle",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "roibosIngredients",
+    "weight": "200 ml",
+    "price": 4.25,
+    "category": "tea"
+  },
+  {
+    "id": "31",
+    "image": "images/caramelmacchiato.jpg",
+    "title": "gingerLemonTitle",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "gingerLemonIngredients",
+    "weight": "200 ml",
+    "price": 4.25,
+    "category": "tea"
+  },
+  {
+    "id": "32",
+    "image": "images/caramelmacchiato.jpg",
+    "title": "Aperol Spritz",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "aperolIngredients",
+    "weight": "300 ml",
+    "price": 4.25,
+    "category": "spritzers"
+  },
+  {
+    "id": "33",
+    "image": "images/caramelmacchiato.jpg",
+    "title": "Hugo",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "hugoIngredients",
+    "weight": "300 ml",
+    "price": 4.25,
+    "category": "spritzers"
+  },
+  {
+    "id": "34",
+    "image": "images/caramelmacchiato.jpg",
+    "title": "Tanqueray blackcurrant royale",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "tanquerayIngredients",
+    "weight": "300 ml",
+    "price": 4.25,
+    "category": "tonic"
+  },
+  {
+    "id": "35",
+    "image": "images/caramelmacchiato.jpg",
+    "title": "Roku gin",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "rokuIngredients",
+    "weight": "300 ml",
+    "price": 4.25,
+    "category": "tonic"
+  },
+  {
+    "id": "36",
+    "image": "images/caramelmacchiato.jpg",
+    "title": "Larios gin rose",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "lariouIngredients",
+    "weight": "300 ml",
+    "price": 4.25,
+    "category": "tonic"
   }
-  
 ]
