@@ -1,13 +1,16 @@
 import { Link } from "preact-router";
+import { useTranslation } from "preact-i18next"; 
 
 const SuggestedProducts = ({ suggestedProducts }) => {
+  const { t } = useTranslation(); 
+
   if (suggestedProducts.length === 0) {
     return null;
   }
 
   return (
     <div className="my-5 container suggested-products">
-      <h4 className="mb-4">Suggested Products</h4>
+      <h4 className="mb-4">{t("suggestedProducts")}</h4> 
       <div className="row">
         {suggestedProducts.map((item) => (
           <div
@@ -22,10 +25,11 @@ const SuggestedProducts = ({ suggestedProducts }) => {
                   alt={item.title}
                 />
                 <div className="card-body">
-                  <h5 className="card-title">{item.title}</h5>
-                  <p className="card-text">{item.description}</p>
+               
+                  <h5 className="card-title">{t(item.title)}</h5> 
+                  <p className="card-text">{t(item.description)}</p>
                   <span className="price font-weight-bold">
-                    {item.price} lei /buc
+                    {item.price} lei / {t("buc")}
                   </span>
                 </div>
               </div>
