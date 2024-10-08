@@ -2,9 +2,13 @@ import { useTranslation } from "preact-i18next";
 import { Link } from "preact-router";
 import placeholder from "../../assets/images/unsplash7.webp";
 import products from "../../products/products.json";
+import unsplash7 from "../../assets/images/unsplash7.webp";
+
+
 const Products = ({ activeCategory }) => {
   const { t } = useTranslation();
 
+  
   const filteredProducts =
     activeCategory === "ALL"
       ? products
@@ -28,7 +32,7 @@ const Products = ({ activeCategory }) => {
                 <div className="card h-100 d-flex flex-column">
                   <img
                     className="card-img-top"
-                    src={placeholder}
+                    src={`/src/assets/images/${product.image}`}
                     alt={product.title}
                   />
 
