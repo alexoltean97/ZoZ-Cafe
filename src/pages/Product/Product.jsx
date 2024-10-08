@@ -41,7 +41,7 @@ const Product = () => {
         <div className="row">
           <div className="col-lg-3 col-sm-12 col-12 order-2 order-lg-1">
             <ProductImage
-               src={`/images/${product.image}`} 
+               src={product.image} 
               alt={product.title}
             />
           </div>

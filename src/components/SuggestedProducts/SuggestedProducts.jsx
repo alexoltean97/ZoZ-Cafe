@@ -18,7 +18,7 @@ const SuggestedProducts = ({ suggestedProducts }) => {
               <div className="card h-100">
                 <img
                   className="card-img-top"
-                  src={`/src/assets/images/${item.image}`}
+                  src={item.image}
                   alt={item.title}
                 />
                 <div className="card-body">
