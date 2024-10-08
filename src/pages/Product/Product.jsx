@@ -4,7 +4,7 @@ import products from "../../products/products.json";
 import ProductImage from "../../components/ProductImage/ProductImage";
 import ProductTabs from "../../components/ProductTabs/ProductTabs";
 import ProductTabContent from "../../components/ProductTabContent/ProductTabContent";
-import SuggestedProducts from "../../components/SuggestedProducts/SuggestedProducts"; 
+import SuggestedProducts from "../../components/SuggestedProducts/SuggestedProducts";
 
 const Product = () => {
   const { t } = useTranslation();
@@ -40,7 +40,10 @@ const Product = () => {
 
         <div className="row">
           <div className="col-lg-3 col-sm-12 col-12 order-2 order-lg-1">
-            <ProductImage />
+            <ProductImage
+              src={`/src/assets/images/${product.image}`}
+              alt={product.title}
+            />
           </div>
 
           <div className="col-lg-9 col-sm-12 col-12 order-1 order-lg-2">

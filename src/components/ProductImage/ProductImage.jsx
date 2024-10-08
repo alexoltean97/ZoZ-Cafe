@@ -1,9 +1,7 @@
-import placeholder from "../../assets/images/unsplash7.webp";
-
-const ProductImage = () => {
+const ProductImage = ({ src, alt }) => {
   return (
     <div className="product-image">
-      <img className="img-fluid" src={placeholder} alt="Product Placeholder" />
+      <img className="img-fluid" src={src} alt={alt} />
     </div>
   );
 };

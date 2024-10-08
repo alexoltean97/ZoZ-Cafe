@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "image": "images/espresso.jpg",
+    "image": "unsplash7.webp",
     "title": "Espresso",
     "description": "espressoDesc",
     "ingredients": "ingredientsEspresso",
@@ -11,7 +11,7 @@
   },
   {
     "id": "2",
-    "image": "images/latte.jpg",
+    "image": "unsplash7.webp",
     "title": "Double Espresso",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "ingredientsDoubleEspresso",
@@ -21,17 +21,17 @@
   },
   {
     "id": "3",
-    "image": "images/cappuccino.jpg",
+    "image": "unsplash7.webp",
     "title": "Americano",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "ingredientsAmericano",
     "weight": "80 ml",
     "price": 3.50,
-    "category": "Coffe"
+    "category": "coffe"
   },
   {
     "id": "4",
-    "image": "images/americano.jpg",
+    "image": "unsplash7.webp",
     "title": "Long Black",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "ingredientsLongBlack",
@@ -41,7 +41,7 @@
   },
   {
     "id": "5",
-    "image": "images/mocha.jpg",
+    "image": "unsplash7.webp",
     "title": "Espresso Machiatto",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "ingredientsEspressoMachiato",
@@ -51,7 +51,7 @@
   },
   {
     "id": "6",
-    "image": "images/flatwhite.jpg",
+    "image": "unsplash7.webp",
     "title": "Cortado",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "ingredientsCortado",
@@ -61,7 +61,7 @@
   },
   {
     "id": "7",
-    "image": "images/icedcoffee.jpg",
+    "image": "unsplash7.webp",
     "title": "Babyccino",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "ingredientsBabycino",
@@ -71,7 +71,7 @@
   },
   {
     "id": "8",
-    "image": "images/coldbrew.jpg",
+    "image": "unsplash7.webp",
     "title": "Cappuccino",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "ingredientsCappucino",
@@ -81,7 +81,7 @@
   },
   {
     "id": "9",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "unsplash7.webp",
     "title": "Flat white",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "ingredientsFlatWhite",
@@ -91,7 +91,7 @@
   },
   {
     "id": "10",
-    "image": "images/affogato.jpg",
+    "image": "unsplash7.webp",
     "title": "Latte",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "ingredientsLate",
@@ -119,7 +119,7 @@
   },
   {
     "id": "11",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "icecoffe2.webp",
     "title": "Shakerado",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "shakeradoIngredients",
@@ -129,7 +129,7 @@
   },
   {
     "id": "12",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "icecoffe2.webp",
     "title": "Iced Latte",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "icedIngredients",
@@ -139,7 +139,7 @@
   },
   {
     "id": "13",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "frappe.webp",
     "title": "Frappe",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "frapeIngredients",
@@ -149,7 +149,7 @@
   },
   {
     "id": "14",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "frappe.webp",
     "title": "Cold brew tonic",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "brewTonicIngredients",
@@ -159,7 +159,7 @@
   },
   {
     "id": "15",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "frappe.webp",
     "title": "Cold brew latte",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "brewLatteIngredients",
@@ -169,7 +169,7 @@
   },
   {
     "id": "16",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "hot.webp",
     "title": "Prana chai",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "pranaChaiIngredients",
@@ -179,7 +179,7 @@
   },
   {
     "id": "17",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "hot.webp",
     "title": "Matcha Latte",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "matchaLatteIngredients",
@@ -189,7 +189,7 @@
   },
   {
     "id": "18",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "hot.webp",
     "title": "Hot cocoa",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "hotCocoaIngredients",
@@ -199,7 +199,7 @@
   },
   {
     "id": "19",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "icetea.webp",
     "title": "Fruit iced tea",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "fruitIcedTeaIngredients",
@@ -209,7 +209,7 @@
   },
   {
     "id": "20",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "icetea.webp",
     "title": "Mint iced tea",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "mintIcedTeaIngredients",
@@ -219,7 +219,7 @@
   },
   {
     "id": "21",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "gingershot.webp",
     "title": "Gingershot",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "gingerIngredients",
@@ -229,7 +229,7 @@
   },
   {
     "id": "22",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "racoritoare.webp",
     "title": "Coca Cola",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "mint infusion, lemon, sugar syrup, mint, ice",
@@ -239,7 +239,7 @@
   },
   {
     "id": "23",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "racoritoare.webp",
     "title": "Sprite",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "mint infusion, lemon, sugar syrup, mint, ice",
@@ -249,7 +249,7 @@
   },
   {
     "id": "24",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "racoritoare.webp",
     "title": "Fanta",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "mint infusion, lemon, sugar syrup, mint, ice",
@@ -259,7 +259,7 @@
   },
   {
     "id": "25",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "hottea.webp",
     "title": "kahoshimaTitle",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "kagoshimaIngredients",
@@ -269,7 +269,7 @@
   },
   {
     "id": "26",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "hottea.webp",
     "title": "thaiAppleTitle",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "thaiIngredients",
@@ -279,7 +279,7 @@
   },
   {
     "id": "27",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "hottea.webp",
     "title": "stormTitle",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "stormIngredients",
@@ -289,7 +289,7 @@
   },
   {
     "id": "28",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "hottea.webp",
     "title": "peperMintTitle",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "mintIngredients",
@@ -299,7 +299,7 @@
   },
   {
     "id": "29",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "hottea.webp",
     "title": "anhuiTitle",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "anhuiIngredients",
@@ -309,7 +309,7 @@
   },
   {
     "id": "30",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "hottea.webp",
     "title": "roibosTitle",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "roibosIngredients",
@@ -319,7 +319,7 @@
   },
   {
     "id": "31",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "hottea.webp",
     "title": "gingerLemonTitle",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "gingerLemonIngredients",
@@ -329,7 +329,7 @@
   },
   {
     "id": "32",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "aperol.webp",
     "title": "Aperol Spritz",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "aperolIngredients",
@@ -339,7 +339,7 @@
   },
   {
     "id": "33",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "hugo.webp",
     "title": "Hugo",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "hugoIngredients",
@@ -349,7 +349,7 @@
   },
   {
     "id": "34",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "gin2.webp",
     "title": "Tanqueray blackcurrant royale",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "tanquerayIngredients",
@@ -359,7 +359,7 @@
   },
   {
     "id": "35",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "gin2.webp",
     "title": "Roku gin",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "rokuIngredients",
@@ -369,7 +369,7 @@
   },
   {
     "id": "36",
-    "image": "images/caramelmacchiato.jpg",
+    "image": "gin2.webp",
     "title": "Larios gin rose",
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "lariouIngredients",
