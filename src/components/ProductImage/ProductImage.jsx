@@ -1,8 +1,8 @@
 const ProductImage = ({ src, alt }) => {
   return (
     <div className="product-image">
-      <img className="img-fluid" src={`/public/${src}`} alt={alt} />
-    </div>
+      <img className="img-fluid" src={`/${src}`} alt={alt} />
+      </div>
   );
 };
 
