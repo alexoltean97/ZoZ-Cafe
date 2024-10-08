@@ -29,7 +29,7 @@ const Products = ({ activeCategory }) => {
                 <div className="card h-100 d-flex flex-column">
                   <img
                     className="card-img-top"
-                    src={`/images/${item.image}`} 
+                    src={product.image} 
                     alt={product.title}
                   />
 
