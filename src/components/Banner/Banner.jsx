@@ -1,5 +1,5 @@
 import { useTranslation } from "preact-i18next";
-import backgroud from "../../assets/images/unsplash9.jpg";
+import backgroud from "../../assets/images/unsplash9.webp";
 
 const Banner = () => {
   const { t } = useTranslation();

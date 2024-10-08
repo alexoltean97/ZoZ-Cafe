@@ -1,5 +1,5 @@
 import { useTranslation } from "preact-i18next";
-import placeholder from "../../assets/images/unsplash2.jpg";
+import placeholder from "../../assets/images/unsplash2.webp";
 const About = () => {
   const { t } = useTranslation();
   return (

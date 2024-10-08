@@ -1,5 +1,5 @@
 import { Link } from "preact-router";
-import placeholder from "../../assets/images/unsplash7.jpg";
+import placeholder from "../../assets/images/unsplash7.webp";
 
 const SuggestedProducts = ({ suggestedProducts }) => {
   if (suggestedProducts.length === 0) {
