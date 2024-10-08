@@ -1,9 +1,6 @@
 import { useTranslation } from "preact-i18next";
 import { Link } from "preact-router";
-import placeholder from "../../assets/images/unsplash7.webp";
 import products from "../../products/products.json";
-import unsplash7 from "../../assets/images/unsplash7.webp";
-
 
 const Products = ({ activeCategory }) => {
   const { t } = useTranslation();
