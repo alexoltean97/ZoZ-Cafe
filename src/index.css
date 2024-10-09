@@ -307,7 +307,7 @@ body {
 }
 
 #Dark .category-image {
-  box-shadow: 0px 10px 40px rgba(255, 255, 255, 0.1);
+  background-color: #2c2c2c;
 }
 
 .category-image {
@@ -663,7 +663,7 @@ input:checked + .slider:before {
   color: var(--white-color);
 }
 .not-found {
-  height: 100vh; 
+  height: 100vh;
 }
 
 @media screen and (min-width: 768px) {
@@ -700,6 +700,10 @@ input:checked + .slider:before {
 
   p {
     font-size: 16px !important;
+  }
+
+  .intro .container{
+    padding: 0;
   }
 
   .intro-content {
@@ -801,7 +805,7 @@ input:checked + .slider:before {
     text-align: center;
   }
   .not-found {
-    height: 60vh; 
+    height: 60vh;
     padding-top: 30px;
     padding-bottom: 30px;
   }

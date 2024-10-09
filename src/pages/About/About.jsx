@@ -13,7 +13,7 @@ const About = () => {
 
           <div class="col-lg-3">
             <div className="images-content">
-              <img src={placeholder}></img>
+              <img src={placeholder} alt="About us"></img>
             </div>
           </div>
         </div>
