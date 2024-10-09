@@ -7,6 +7,7 @@ const Banner = () => {
     <div className="intro">
       <div className="container position-relative">
         <div className="banner position-relative">
+  
           <picture>
             <source srcset={backgroud} type="image/webp" />
             <img

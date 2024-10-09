@@ -8,7 +8,7 @@ const LogoFooter = () => {
   const themeLogo = currentTheme === "Light" ? LogoDark : LogoWhite;
   return (
     <div className="logo-footer">
-      <img src={themeLogo} alt="logo" />
+      <img src={themeLogo} alt="logo" width="150" height="58"/>
     </div>
   );
 };

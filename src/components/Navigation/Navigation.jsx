@@ -11,8 +11,8 @@ const Navigation = () => {
 
   return (
     <nav className="main-navigation py-4">
-      <img src={themeLogo} alt="logo" />
-
+      <img src={themeLogo} alt="logo" width="150" height="58"/>
+ 
       <Link
         href="/"
         className="mx-4 pb-2 pb-1 main-nav_link position-relative"
