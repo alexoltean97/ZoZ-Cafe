@@ -1,5 +1,5 @@
 import { useTheme } from "../../context/ThemeContext";
-import LogoDark from "../../assets/images/new-black-logo-paint.png";
+import LogoDark from "../../assets/images/zoz-logo-dark-resized.png";
 import LogoWhite from "../../assets/images/zoz-logo-white-paint.png";
 
 const MobileLogo = () => {
