@@ -7,7 +7,8 @@ const Map = () => {
         style={{ border: 0 }}
         allowFullScreen=""
         loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
+        referrerPolicy="no-referrer"
+        sandbox="allow-scripts allow-same-origin allow-popups"
       ></iframe>
     </div>
   );

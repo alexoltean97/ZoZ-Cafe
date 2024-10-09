@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /private/       # Block access to private directories (if any)
+Disallow: /admin/         # Block access to admin pages
+Disallow: /node_modules/  # Block dependencies folder (if exposed)
+
+# Allow all other pages to be crawled
+Allow: /
+
+# Specify the sitemap URL
+Sitemap: https://www.zozcoffee.ro/sitemap.xml
