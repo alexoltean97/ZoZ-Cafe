@@ -37,7 +37,7 @@ const Categories = ({ activeCategory, setActiveCategory }) => {
   return (
     <div className="categories my-4">
       <div className="container">
-        <h3 className="mb-4">{t("categories")}</h3>
+        <h2 className="mb-4">{t("categories")}</h2>
         {isScrollable ? (
           <ScrollMenu>
             {categories.map(({ category, name }, index) => (
