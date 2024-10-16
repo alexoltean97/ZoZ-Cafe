@@ -20,7 +20,7 @@ const ProductTabContent = ({ activeTab, product }) => {
           {!product.extrashot &&
           !product.extraMilkOat &&
           !product.extraMilkPeas ? (
-            <div>{t("noExtras")}</div>
+            <div className="pb-2">{t("noExtras")}</div>
           ) : (
             <>
               {product.extrashot && (

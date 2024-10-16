@@ -27,7 +27,7 @@ const SuggestedProducts = ({ suggestedProducts }) => {
                 <div className="card-body">
                
                   <h5 className="card-title">{t(item.title)}</h5> 
-                  <p className="card-text">{t(item.description)}</p>
+                  <p className="card-text">{t(item.weight)}</p>
                   <span className="price font-weight-bold">
                     {item.price} lei / {t("buc")}
                   </span>

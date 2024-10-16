@@ -12,8 +12,8 @@ const Terms = () => {
         <div className="pb-3">
           Acceptarea prezentelor Termene și Condiții reprezintă un contract la
           distanță încheiat între: a) dumneavoastră în calitate de utilizator al
-          sistemului de comenzi online și b) Roots, cu sediul social în Strada
-          Alexandru Vaida Voevod 16, Cluj-Napoca 400394, Cluj-Napoca, Cluj,
+          sistemului de comenzi online și b) ZoZ Caffe, cu sediul social în Strada
+          de completat, Arad 400394, Arad, Arad,
           Romania, înregistrat la Oficiul Registrul Comerțului sub numărul ,
           având Cod de Identificare Fiscală: , în calitate de deținător al
           sistemului de comenzi online

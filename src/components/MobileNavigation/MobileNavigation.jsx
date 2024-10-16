@@ -39,11 +39,11 @@ const MobileNavigation = () => {
             <Link
               href="/"
               className="mx-4 pb-1 mobile_main-nav_link"
-              activeClassName="mobile-active-link" 
+              activeClassName="mobile-active-link"
               style="margin-left: 5px !important;"
             >
               {t("home")}
-            {svgIcons.home}
+              {svgIcons.home}
             </Link>
           </li>
 
@@ -74,7 +74,7 @@ const MobileNavigation = () => {
           <li className="list-group-item text-left mobile-list mb-2 p-2">
             <div>
               <span className="font-weight-bold d-flex">
-                Choose a Language:
+                {t("chooseLang")}
                 <MobileLanguageSwitcher
                   changeLanguage={changeLanguage}
                   isSelected={isSelected}
@@ -86,7 +86,7 @@ const MobileNavigation = () => {
           <li className="list-group-item text-left mobile-list mobile-list-theme mb-2 p-2">
             <div>
               <span className="font-weight-bold d-flex">
-                Choose a Theme: <ThemeSwitch />
+                {t("chooseTheme")} <ThemeSwitch />
               </span>
             </div>
           </li>

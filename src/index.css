@@ -1,3 +1,8 @@
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
 @font-face {
   font-family: "MainFont";
   src: url("./assets/fonts/Rhizome-RegularTrial.otf") format("opentype");
@@ -46,7 +51,7 @@ body {
   margin: 0 0 0 0;
   height: 100%;
   width: 100%;
-  font-family: "MainFont", "sans-serif";
+  font-family: "MainFont", Montserrat, sans-serif;
 }
 
 .btn-primary {
