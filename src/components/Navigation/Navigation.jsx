@@ -1,8 +1,8 @@
 import { useTranslation } from "preact-i18next";
 import { useTheme } from "../../context/ThemeContext";
 import { Link } from "preact-router/match";
-import LogoDark from "../../assets/images/new-black-logo-paint.png";
-import LogoWhite from "../../assets/images/zoz-logo-white-paint.png";
+import LogoDark from "../../assets/images/logo1.png";
+import LogoWhite from "../../assets/images/logo2.png";
 import { svgIcons } from "./icons";
 const Navigation = () => {
   const { t } = useTranslation();
@@ -11,8 +11,8 @@ const Navigation = () => {
 
   return (
     <nav className="main-navigation py-4">
-      <img src={themeLogo} alt="logo" width="150" height="58"/>
- 
+      <img src={themeLogo} alt="logo" width="120" height="57.594" />
+
       <Link
         href="/"
         className="mx-4 pb-2 pb-1 main-nav_link position-relative"

@@ -1,6 +1,6 @@
 import { useTheme } from "../../context/ThemeContext";
-import LogoDark from "../../assets/images/new-black-logo-paint.png";
-import LogoWhite from "../../assets/images/zoz-logo-white-paint.png";
+import LogoDark from "../../assets/images/logo1.png";
+import LogoWhite from "../../assets/images/logo2.png";
 
 
 const LogoFooter = () => {
@@ -8,7 +8,7 @@ const LogoFooter = () => {
   const themeLogo = currentTheme === "Light" ? LogoDark : LogoWhite;
   return (
     <div className="logo-footer">
-      <img src={themeLogo} alt="logo" width="150" height="58"/>
+      <img src={themeLogo} alt="logo" width="120" height="57.594"/>
     </div>
   );
 };
