@@ -109,6 +109,9 @@ i18n.use(initReactI18next).init({
         buc: "buc",
         chooseLang: "Alege o limbă:",
         chooseTheme: "Alege o temă:",
+        welcome: "Bine ai venit!",
+        personalized: "Dorim să vă oferim o experiență personalizată!",
+        cookieModal: "Acest site folosește cookie-uri pentru a oferi o experiență personalizată!"
       },
     },
 
@@ -214,6 +217,9 @@ i18n.use(initReactI18next).init({
         buc: "piece",
         chooseLang: "Choose a Language:",
         chooseTheme: "Alege o tema",
+        welcome: "Welcome!",
+        personalized: "We want to offer you a personalized experience!",
+        cookieModal: "This site uses cookies to provide a personalized experience!"
       },
     },
   },
