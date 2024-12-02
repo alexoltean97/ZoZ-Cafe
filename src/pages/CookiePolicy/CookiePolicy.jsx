@@ -13,7 +13,7 @@ const CookiePolicy = () => {
         <span className="font-weight-bold">
           1. Introducere Prezenta Politică privind fișierele cookies se aplică
         </span>
-        tuturor utilizatorilor paginii de internet [nume domeniu / website].
+        tuturor utilizatorilor paginii de internet zozcoffee.ro.
         Informațiile prezentate în continuare au ca scop informarea
         utilizatorilor acestei pagini de internet cu privire la plasarea,
         utilizarea și administrarea cookie-urilor de către [deținătorul
@@ -59,8 +59,8 @@ const CookiePolicy = () => {
           </li>
           <li>
             furnizarea de statistici anonime cu privire la modul în care este
-            utilizată această pagină de internet către [deținătorul
-            website-ului], în calitate de deținător al acestei pagini de
+            utilizată această pagină de internet către ZOZ COFFEE SRL
+            , în calitate de deținător al acestei pagini de
             internet;
           </li>
           <li>
@@ -73,8 +73,8 @@ const CookiePolicy = () => {
 
       <div className="pb-2">
         Pe baza feedback-ului transmis prin cookie-uri în legătură cu modul în
-        care se utilizează această pagină de internet, [deținătorul
-        website-ului] poate adopta măsuri pentru ca această pagină de internet
+        care se utilizează această pagină de internet, ZOZ COFFEE SRL
+        poate adopta măsuri pentru ca această pagină de internet
         să fie mai eficientă și mai accesibilă pentru utilizatori. Astfel,
         utilizarea cookie-urilor permite memorarea anumitor setări/preferințe
         stabilite de către utilizatorii acestei pagini de internet, precum:
@@ -123,8 +123,8 @@ const CookiePolicy = () => {
           se utilizează cookie-uri furnizate de terți]
         </span>
         Anumite secțiuni de conținut de pe pagina de internet pot fi furnizate
-        prin intermediul unor terți, adică nu de către [deținătorul
-        website-ului], caz în care aceste cookie-uri sunt denumite cookie-uri
+        prin intermediul unor terți, adică nu de către ZOZ COFFEE SRL
+        , caz în care aceste cookie-uri sunt denumite cookie-uri
         plasate de terți („third party cookie-uri”). Terții furnizori ai
         cookie-urilor trebuie să respecte, de asemenea, regulile în materie de
         protecție a datelor și Politica de Confidențialitate [de adăugat
@@ -147,9 +147,9 @@ const CookiePolicy = () => {
       <div className="pb-2">
         <ol type="a">
           <li>Cookie-uri de performanță a paginii de internet;</li>
-          <li>Cookie-uri de analiză a utilizatorilor;;</li>
-          <li>Cookie-uri pentru geotargetting;;</li>
-          <li>Cookie-uri ale furnizorilor de publicitate;;</li>
+          <li>Cookie-uri de analiză a utilizatorilor;</li>
+          <li>Cookie-uri pentru geotargetting;</li>
+          <li>Cookie-uri ale furnizorilor de publicitate;</li>
         </ol>
       </div>
 

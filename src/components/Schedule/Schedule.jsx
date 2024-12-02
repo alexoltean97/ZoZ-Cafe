@@ -15,31 +15,31 @@ const Schedule = () => {
         <tbody>
           <tr>
             <td>{t("monday")}</td>
-            <td>08:00 AM - 05:00 PM</td>
+            <td>07:30 - 16:30</td>
           </tr>
           <tr>
             <td>{t("tuesday")}</td>
-            <td>08:00 AM - 05:00 PM</td>
+            <td>07:30 - 16:30</td>
           </tr>
           <tr>
             <td>{t("wednesday")}</td>
-            <td>08:00 AM - 05:00 PM</td>
+            <td>07:30 - 16:30</td>
           </tr>
           <tr>
             <td>{t("thursday")}</td>
-            <td>08:00 AM - 05:00 PM</td>
+            <td>07:30 - 16:30</td>
           </tr>
           <tr>
             <td>{t("friday")}</td>
-            <td>08:00 AM - 05:00 PM</td>
+            <td>07:30 - 16:30</td>
           </tr>
           <tr>
             <td>{t("saturday")}</td>
-            <td>09:00 AM - 03:00 PM</td>
+            <td>09:00 - 13:00</td>
           </tr>
-          <tr className="table-danger">
+          <tr>
             <td>{t("sunday")}</td>
-            <td>{t("closed")}</td>
+            <td>09:00 - 13:00</td>
           </tr>
         </tbody>
       </table>

@@ -5,8 +5,8 @@
     "title": "Espresso",
     "description": "espressoDesc",
     "ingredients": "ingredientsEspresso",
-    "weight": "20 ml",
-    "price": 2.50,
+    "weight": "18 ml",
+    "price": 10,
     "category": "coffe"
   },
   {
@@ -16,77 +16,67 @@
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "ingredientsDoubleEspresso",
     "weight": "35 ml",
-    "price": 3.75,
+    "price": 12,
     "category": "coffe"
   },
   {
     "id": "3",
     "image": "unsplash7.webp",
     "title": "Americano",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "description": "80 ml",
     "ingredients": "ingredientsAmericano",
     "weight": "80 ml",
-    "price": 3.50,
+    "price": 13,
     "category": "coffe"
   },
   {
     "id": "4",
     "image": "unsplash7.webp",
     "title": "Long Black",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "description": "100 ml",
     "ingredients": "ingredientsLongBlack",
     "weight": "100 ml",
-    "price": 2.75,
+    "price": 15,
     "category": "coffe"
   },
   {
     "id": "5",
     "image": "unsplash7.webp",
     "title": "Espresso Machiatto",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "description": "50 ml",
     "ingredients": "ingredientsEspressoMachiato",
     "weight": "50 ml",
-    "price": 4.00,
+    "price": 13,
     "category": "coffe"
   },
   {
     "id": "6",
     "image": "unsplash7.webp",
     "title": "Cortado",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "description": "70 ml",
     "ingredients": "ingredientsCortado",
     "weight": "70 ml",
-    "price": 3.85,
-    "category": "coffe"
-  },
-  {
-    "id": "7",
-    "image": "unsplash7.webp",
-    "title": "Babyccino",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "ingredientsBabycino",
-    "weight": "180 ml",
-    "price": 3.00,
+    "price": 14,
     "category": "coffe"
   },
   {
     "id": "8",
     "image": "unsplash7.webp",
     "title": "Cappuccino",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "description": "200 ml",
     "ingredients": "ingredientsCappucino",
-    "weight": "180 ml",
-    "price": 3.25,
+    "weight": "200 ml",
+    "price": 17,
     "category": "coffe"
   },
   {
     "id": "9",
     "image": "unsplash7.webp",
     "title": "Flat white",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "description": "200 ml",
     "ingredients": "ingredientsFlatWhite",
-    "weight": "180 ml",
-    "price": 4.25,
+    "weight": "200 ml",
+    "price": 17,
     "category": "coffe"
   },
   {
@@ -96,13 +86,14 @@
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "ingredientsLate",
     "weight": "300 ml",
-    "price": 4.50,
+    "price": 17,
     "category": "coffe",
     "extrashot": {
       "name": "+ Extra Shot",
       "weight": "20ml",
       "description": "Espresso Single",
-      "ingredients": "espresso Single"
+      "ingredients": "espresso Single",
+      "extraCost": "2"
     },
     "extraMilkOat": {
       "name": "oatMilk",
@@ -120,21 +111,21 @@
   {
     "id": "11",
     "image": "icecoffe2.webp",
-    "title": "Shakerado",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "shakeradoIngredients",
-    "weight": "300 ml",
-    "price": 4.25,
+    "title": "Manual Drip",
+    "description": "200 ml",
+    "ingredients": "",
+    "weight": "200 ml",
+    "price": 18,
     "category": "iced"
   },
   {
     "id": "12",
     "image": "icecoffe2.webp",
-    "title": "Iced Latte",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "title": "Cold Brew",
+    "description": "150 ml",
     "ingredients": "icedIngredients",
-    "weight": "300 ml",
-    "price": 4.25,
+    "weight": "150 ml",
+    "price": 16,
     "category": "iced"
   },
   {
@@ -171,52 +162,34 @@
     "id": "16",
     "image": "hot.webp",
     "title": "Prana chai",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "description": "180 ml",
     "ingredients": "pranaChaiIngredients",
     "weight": "180 ml",
-    "price": 4.25,
+    "price": 17,
     "category": "hot"
   },
   {
     "id": "17",
     "image": "hot.webp",
     "title": "Matcha Latte",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "description": "180 ml",
     "ingredients": "matchaLatteIngredients",
     "weight": "180 ml",
-    "price": "4.25",
+    "price": 18,
     "category": "hot"
   },
+
   {
     "id": "18",
     "image": "hot.webp",
-    "title": "Hot cocoa",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "hotCocoaIngredients",
-    "weight": "200 ml",
-    "price": 4.25,
+    "title": "Tea Infusions - Black / Green / Herbal",
+    "description": "250 ml",
+    "ingredients": "matchaLatteIngredients",
+    "weight": "250 ml",
+    "price": 14,
     "category": "hot"
   },
-  {
-    "id": "19",
-    "image": "icetea.webp",
-    "title": "Fruit iced tea",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "fruitIcedTeaIngredients",
-    "weight": "400 ml",
-    "price": 4.25,
-    "category": "icedtea"
-  },
-  {
-    "id": "20",
-    "image": "icetea.webp",
-    "title": "Mint iced tea",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "mintIcedTeaIngredients",
-    "weight": "400 ml",
-    "price": 4.25,
-    "category": "icedtea"
-  },
+
   {
     "id": "21",
     "image": "gingershot.webp",
@@ -224,37 +197,88 @@
     "description": "Lorem Ipsum Dolor Sit amet consectutum.",
     "ingredients": "gingerIngredients",
     "weight": "50 ml",
-    "price": 4.25,
+    "price": 10,
+    "category": "gingershot"
+  },
+  {
+    "id": "34",
+    "image": "gingershot.webp",
+    "title": "Fresh Juices",
+    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
+    "ingredients": "gingerIngredients",
+    "weight": "250 ml",
+    "price": 18,
     "category": "gingershot"
   },
   {
     "id": "22",
-    "image": "racoritoare.webp",
-    "title": "Coca Cola",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "mint infusion, lemon, sugar syrup, mint, ice",
-    "weight": "400 ml",
-    "price": 4.25,
+    "image": "lemonaid.webp",
+    "title": "Lemonaid Lime",
+    "description": "330 ml",
+    "ingredients": "Lime ECO, Passion Fruit ECO, Blood Orange ECO, Ginger ECO",
+    "weight": "330 ml",
+    "price": 17,
+    "category": "beverages"
+  },
+
+  {
+    "id": "35",
+    "image": "lemonaid.webp",
+    "title": "Lemonaid Passion Fruit",
+    "description": "330 ml",
+    "ingredients": "Lime ECO, Passion Fruit ECO, Blood Orange ECO, Ginger ECO",
+    "weight": "330 ml",
+    "price": 17,
+    "category": "beverages"
+  },
+  {
+    "id": "36",
+    "image": "lemonaid.webp",
+    "title": "Lemonaid Blood Orange",
+    "description": "330 ml",
+    "ingredients": "Lime ECO, Passion Fruit ECO, Blood Orange ECO, Ginger ECO",
+    "weight": "330 ml",
+    "price": 17,
+    "category": "beverages"
+  },
+  {
+    "id": "37",
+    "image": "lemonaid.webp",
+    "title": "Lemonaid Ginger",
+    "description": "330 ml",
+    "ingredients": "Lime ECO, Passion Fruit ECO, Blood Orange ECO, Ginger ECO",
+    "weight": "330 ml",
+    "price": 17,
     "category": "beverages"
   },
   {
     "id": "23",
-    "image": "racoritoare.webp",
-    "title": "Sprite",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "mint infusion, lemon, sugar syrup, mint, ice",
-    "weight": "400 ml",
-    "price": 4.25,
+    "image": "chari.jpg",
+    "title": "ChariTea Green",
+    "description": "330 ml",
+    "ingredients": "ChariTea Red ECO, ChariTea Green ECO, ChariTea Mate ECO",
+    "weight": "330 ml",
+    "price": 17,
+    "category": "beverages"
+  },
+  {
+    "id": "38",
+    "image": "chari.jpg",
+    "title": "ChariTea Mate",
+    "description": "330 ml",
+    "ingredients": "ChariTea Red ECO, ChariTea Green ECO, ChariTea Mate ECO",
+    "weight": "330 ml",
+    "price": 17,
     "category": "beverages"
   },
   {
     "id": "24",
-    "image": "racoritoare.webp",
-    "title": "Fanta",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "mint infusion, lemon, sugar syrup, mint, ice",
+    "image": "berlin.webp",
+    "title": "Fountain of Youth - Berlin",
+    "description": "520 ml",
+    "ingredients": "Izotonic, hidratant, Aport de Magneziu, Calciu, Fosfor, Sodiu Contine Citokinine",
     "weight": "400 ml",
-    "price": 4.25,
+    "price": 15,
     "category": "beverages"
   },
   {
@@ -329,52 +353,62 @@
   },
   {
     "id": "32",
-    "image": "aperol.webp",
-    "title": "Aperol Spritz",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "aperolIngredients",
-    "weight": "300 ml",
-    "price": 4.25,
-    "category": "spritzers"
+    "image": "yaya.webp",
+    "title": "YAYA Kombucha Yuzu",
+    "weight": "330 ml",
+    "ingredients": "Passionfruit ECO, Yuzu ECO, Ginger ECO",
+    "weight": "330 ml",
+    "price": 18,
+    "category": "beverages"
+  },
+  {
+    "id": "40",
+    "image": "yaya.webp",
+    "title": "YAYA Kombucha Ginger",
+    "weight": "330 ml",
+    "ingredients": "Passionfruit ECO, Yuzu ECO, Ginger ECO",
+    "weight": "330 ml",
+    "price": 18,
+    "category": "beverages"
+  },
+  {
+    "id": "41",
+    "image": "mango-mama.jpeg",
+    "title": "Mango Mama",
+    "weight": "330 ml",
+    "ingredients": "Passionfruit ECO, Yuzu ECO, Ginger ECO",
+    "weight": "330 ml",
+    "price": 11,
+    "category": "beverages"
+  },
+  {
+    "id": "42",
+    "image": "mango-mama.jpeg",
+    "title": "Passion Mama",
+    "weight": "330 ml",
+    "ingredients": "Passionfruit ECO, Yuzu ECO, Ginger ECO",
+    "weight": "330 ml",
+    "price": 11,
+    "category": "beverages"
+  },
+  {
+    "id": "43",
+    "image": "mango-mama.jpeg",
+    "title": "Fountain of Youth Coconut water",
+    "weight": "330 ml",
+    "ingredients": "Passionfruit ECO, Yuzu ECO, Ginger ECO",
+    "weight": "500 ml",
+    "price": 23,
+    "category": "beverages"
   },
   {
     "id": "33",
-    "image": "hugo.webp",
-    "title": "Hugo",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "hugoIngredients",
+    "image": "icecoffe2.webp",
+    "title": "Cold Brew Tonic",
+    "description": "300 ml",
+    "ingredients": "icedIngredients",
     "weight": "300 ml",
-    "price": 4.25,
-    "category": "spritzers"
-  },
-  {
-    "id": "34",
-    "image": "gin2.webp",
-    "title": "Tanqueray blackcurrant royale",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "tanquerayIngredients",
-    "weight": "300 ml",
-    "price": 4.25,
-    "category": "tonic"
-  },
-  {
-    "id": "35",
-    "image": "gin2.webp",
-    "title": "Roku gin",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "rokuIngredients",
-    "weight": "300 ml",
-    "price": 4.25,
-    "category": "tonic"
-  },
-  {
-    "id": "36",
-    "image": "gin2.webp",
-    "title": "Larios gin rose",
-    "description": "Lorem Ipsum Dolor Sit amet consectutum.",
-    "ingredients": "lariouIngredients",
-    "weight": "300 ml",
-    "price": 4.25,
-    "category": "tonic"
+    "price": 20,
+    "category": "iced"
   }
 ]

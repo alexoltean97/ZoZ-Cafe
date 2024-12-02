@@ -11,10 +11,10 @@ const Privacy = () => {
 
       <div className="pb-2">
         Aceasta Politica de confidentialitate descrie politica societatii
-        zozcoffee.ro, Unirii 41, Arad, email: alex.oltean97@gmail.com, telefon:
-        0747188712, cu privire la colectarea, utilizarea si partajarea datelor
+        ZOZ COFFEE SRL, Unirii nr 1, Arad, telefon:
+        0746492110, cu privire la colectarea, utilizarea si partajarea datelor
         personale, date colectate daca utilizati site-ul nostru
-        (https://zozcafe.vercel.app/), numit “Serviciul”. Prin accesarea si
+        (https://zozcoffee.ro/), numit “Serviciul”. Prin accesarea si
         utilizarea Serviciului nostru, iti exprimi acordul cu privire la
         colectarea, utilizarea si partajarea informatiilor si datelor personale
         puse la dispozitie in conformitate cu aceasta Politica de
@@ -58,7 +58,7 @@ const Privacy = () => {
 
       <div className="pb-2">
         <span className="font-weight-bold">
-          CUM FOLOSIM INFORMATIILE COLECTATE
+          CUM FOLOSIM INFORMATIILE COLECTATE:<br/>
         </span>
         Folosim informatiile colectate in urmatoarele scopuri: Consimtamant
         Termeni & Conditii Daca vom intentiona sa folosim informatiile colectate
@@ -133,12 +133,12 @@ const Privacy = () => {
         restictiona procesarea anumitor date personale, ai dreptul de a te
         adresa autoritatii competente cu petitii sau reclamatii cu privire la
         drepturile tale. Pentru a-ti exercita aceste drepturi, ne poti contacta
-        astfel: Nini Stefan, zozcoffee.ro, alex.oltean97@gmail.com. Iti vom
+        astfel: Nini Stefan, zozcoffee.ro, zoz@gmail.com. Iti vom
         raspunde la cerere in conformitate cu legislatia aplicabila, in termen
         de 30 zile. Ai posibilitatea sa te opui prelucrarii pentru comunicari de
         marketing sau analizei pentru publicitate personalizata, prin
         modificarea setarilor sau direct prin email la adresa
-        alex.oltean97@gmail.com. Te rugam sa iei in considerare ca anumite
+        zoz@gmail.com.com. Te rugam sa iei in considerare ca anumite
         informatii colectate sunt necesare pentru functionarea Serviciului, iar
         retragerea consimtamantului poate face ca acesta sa devina indisponibil
         pentru utilizare.
@@ -178,7 +178,7 @@ const Privacy = () => {
           Daca ai intrebari sau nelamuriri cu privire la procesarea
           informatiilor / datelor personale colectate de catre noi, te rugam sa
           ne contactezi, „In atentia Responsabilului cu datele personale”, la
-          adresa: Nini Stefan, zozcoffee.ro, email: alex.oltean97@gmail.com. Vom
+          adresa: Nini Stefan, zozcoffee.ro, email: zoz@gmail.com. Vom
           raspunde solicitarii in concordanta cu prevederile legale aplicabile
           in vigoare. Politica de confidentialitate a fost generata de
           hackeradvisor.com, © copyright si drepturi de proprietate
